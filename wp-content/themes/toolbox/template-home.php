@@ -18,28 +18,21 @@ Template Name: Home Page
 
 get_header(); ?>
 
+    <div id="marquee">
+      <?php echo do_shortcode("[metaslider id=7]"); ?>
+    </div>
+
 		<div id="primary">
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
 				<?php toolbox_content_nav( 'nav-above' ); ?>
-
+        
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
         <!-- Custom Home-->
-        
-        <!--<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<header class="entry-header">
-        		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-        
-        		<?php if ( 'post' == get_post_type() ) : ?>
-        		<div class="entry-meta">
-        			<?php toolbox_posted_on(); ?>
-        		</div><!-- .entry-meta -->
-        		<?php endif; ?>
-        	</header> -->
         
         	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
         	<div class="entry-summary">
