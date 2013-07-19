@@ -19,7 +19,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
   background: url("images/background.jpg") no-repeat center top;
   font: normal 15px Arial;
-  color: #ffffff; 
+  color: #ffffff;
+  margin: 0px !important; 
 }
 
 #page {
@@ -39,8 +40,8 @@ body {
 #primary {
 	float: left;
 	margin: 0 -240px 0 0;
-	width: 590px;
-	padding: 15px 30px;
+	width: 600px;
+	padding: 15px 25px;
 	
 }
 #content {
@@ -439,5 +440,16 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 1em 0 0;
+	padding: 50px 0;
+	background-color: #0a0d11;
+	background: #0a0d11 url("images/bkg_footer.jpg") no-repeat center top;
 }
+
+#site-footer {
+  width: 960px;
+  margin: 0px auto;
+}
+
+
+
+
