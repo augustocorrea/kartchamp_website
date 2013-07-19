@@ -18,13 +18,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   background: url("images/background.jpg") no-repeat center top;
+  font: normal 15px Arial; 
 }
 
 #page {
 	display: block;
 	margin: 0 auto;
   width: 960px;
-  background: url("images/background_transparent.png") repeat left top;
+}
+
+#page {
+  background: url("images/background_transparent.png") repeat-x left 95px;
+  min-height: 700px;
+}
+
+#marquee {
+  
 }
 #primary {
 	float: left;
