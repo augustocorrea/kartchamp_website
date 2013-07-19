@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 body {
-  background: url("images/background.jpg") no-repeat center top;
+  background: #282924 url("images/background.jpg") no-repeat center top;
   font: normal 15px Arial;
   color: #ffffff;
   margin: 0px !important; 

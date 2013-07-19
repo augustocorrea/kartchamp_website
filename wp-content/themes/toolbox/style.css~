@@ -445,7 +445,7 @@ article.comment {
 	background: #0a0d11 url("images/bkg_footer.jpg") no-repeat center top;
 }
 
-#site-footer {
+#wrapper-footer {
   width: 960px;
   margin: 0px auto;
 }
