@@ -18,24 +18,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   background: #282924 url("images/background.jpg") no-repeat center top;
-  font: normal 15px Arial;
-  color: #ffffff;
+	font: normal 15px Arial;
+	color: #ffffff; 
   margin: 0px !important; 
 }
 
 #page {
 	display: block;
 	margin: 0 auto;
-  width: 960px;
+	width: 960px;
 }
 
 #page {
-  background: url("images/background_transparent.png") repeat-x left 95px;
-  min-height: 700px;
+	background: url("images/background_transparent.png") repeat-x left 95px;
+	min-height: 700px;
 }
 
 #marquee {
-  
+	
 }
 #primary {
 	float: left;
@@ -142,7 +142,7 @@ body {
 /* =Menu
 -------------------------------------------------------------- */
 
-#access {
+/*#access {
 	background: #eee;
 	display: block;
 	float: left;
@@ -195,7 +195,182 @@ body {
 }
 #access ul li:hover > ul {
 	display: block;
+}*/
+
+/* MENU RODRIGO  */
+.menu-menu-container {
+	background: url("images/topmenu_bg.gif") no-repeat scroll 0 0 transparent;
+	height: 70px;
+	position: relative;
+	z-index: 2;
 }
+
+.menu-menu-container .menu li a:hover, .menu-menu-container .menu .current-menu-item a, .menu-menu-container .menu .current-menu-item li a:hover, .menu-menu-container .menu .current-menu-item .current_page_item a, .menu-menu-container .menu .current-menu-ancestor a, .menu-menu-container .menu .current-menu-ancestor a:hover, .menu-menu-container .menu li li.current-menu-ancestor a, .menu-menu-container .menu li .current-menu-ancestor .current-menu-item a {
+	color: #000000;
+}
+
+:focus {
+	outline: 0 none;
+}
+
+ol, ul {
+	list-style: none outside none;
+}
+
+.menu-menu-container .menu {
+	color: #FFFFFF;
+	float: left;
+	font-family: 'edelsansRegular',Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 1.1em;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1300;
+}
+
+.menu-menu-container ul li {
+	background: url("images/topmenu_line.gif") no-repeat scroll right 5px transparent;
+	display: block;
+	float: left;
+	height: 70px;
+	list-style: none outside none;
+	margin: 0;
+	position: relative;
+}
+
+.menu-menu-container .menu li a {
+	color: #FFFFFF;
+	display: block;
+	height: 20px;
+	padding: 30px 33px 20px;
+	text-decoration: none;
+}
+
+.menu-menu-container .menu .menu-item-16 a, .menu-menu-container .menu .menu-item-16 a:hover, .menu-menu-container .menu .current-menu-ancestor .current-menu-item a, .menu-menu-container .menu .current-menu-ancestor li .current-menu-item a {
+	color: #FFFFFF;
+}
+
+
+.menu-menu-container .menu li a:hover {
+	cursor: pointer;
+}
+.menu-menu-container .menu li a {
+	display: block;
+}
+
+.menu-item-16 a {
+	background: url("images/menu_blue.gif") 0 0 repeat-x;
+}
+
+.menu-item-16 a:hover, .current-menu-item.menu-item-16 a, .current-menu-ancestor.menu-item-16 a {
+	background: url("images/menu_blue_a.png") center 0 no-repeat;
+}
+
+.menu-item-14 a {
+	background: url("images/menu_red.gif") 0 0 repeat-x;
+}
+
+.menu-item-14 a:hover, .current-menu-item.menu-item-14 a, .current-menu-ancestor.menu-item-14 a {
+	background: url("images/menu_red_a.png") center 0 no-repeat;
+}
+
+.menu-item-28 a {
+	background: url("images/menu_orange.gif") 0 0 repeat-x;
+}
+
+.menu-item-28 a:hover, .current-menu-item.menu-item-28 a, .current-menu-ancestor.menu-item-28 a {
+	background: url("images/menu_orange_a.png") center 0 no-repeat;
+}
+
+.menu-item-31 a {
+	background: url("images/menu_yellow.gif") 0 0 repeat-x;
+}
+
+.menu-item-31 a:hover, .current-menu-item.menu-item-31 a, .current-menu-ancestor.menu-item-31 a {
+	background: url("images/menu_yellow_a.png") center 0 no-repeat;
+}
+
+.menu-item-27 a {
+	background: url("images/menu_green.gif") 0 0 repeat-x;
+}
+
+.menu-item-27 a:hover, .current-menu-item.menu-item-27 a, .current-menu-ancestor.menu-item-27 a {
+	background: url("images/menu_green_a.png") center 0 no-repeat;
+}
+
+.menu-menu-container .menu li ul li.first {
+	background: url("images/dropdown_1_first.png") no-repeat scroll 0 top transparent;
+	padding-top: 10px;
+}
+.menu-menu-container .menu li ul li {
+	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
+	clear: both;
+	display: block;
+	height: auto;
+	line-height: 1.4em;
+	margin: 0;
+	position: relative;
+	width: 140px;
+}
+.menu-menu-container .menu li {
+	background: url("images/topmenu_line.gif") no-repeat scroll right 5px transparent;
+	display: block;
+	float: left;
+	height: 70px;
+	list-style: none outside none;
+	margin: 0;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END - MENU RODRIGO  */
 
 
 /* =Content
