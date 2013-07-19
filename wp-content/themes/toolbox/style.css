@@ -18,7 +18,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #page {
 	display: block;
-	margin: 1em;
+	margin: 0 auto;
+    width:960px;
 }
 #primary {
 	float: left;
