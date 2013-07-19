@@ -17,10 +17,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 -------------------------------------------------------------- */
 
 body {
-  background: #282924 url("images/background.jpg") no-repeat center top;
-	font: normal 15px Arial;
+	background: #282924 url("images/background.jpg") no-repeat center top;
 	color: #ffffff; 
-  margin: 0px !important; 
+	font: normal 15px Arial;
+	margin: 0px !important;
 }
 
 #page {
@@ -248,17 +248,31 @@ ol, ul {
 	text-decoration: none;
 }
 
+.menu-menu-container .menu li a:hover {
+	cursor: pointer;
+}
+
+.menu-menu-container .menu li ul li {
+	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
+	clear: both;
+	display: block;
+	height: auto;
+	line-height: 1.4em;
+	margin: 0;
+	position: relative;
+	width: 140px;
+}
+.
+menu-menu-container .menu li ul li.first {
+	background: url("images/dropdown_1_first.png") no-repeat scroll 0 top transparent;
+	padding-top: 10px;
+}
+
 .menu-menu-container .menu .menu-item-16 a, .menu-menu-container .menu .menu-item-16 a:hover, .menu-menu-container .menu .current-menu-ancestor .current-menu-item a, .menu-menu-container .menu .current-menu-ancestor li .current-menu-item a {
 	color: #FFFFFF;
 }
 
 
-.menu-menu-container .menu li a:hover {
-	cursor: pointer;
-}
-.menu-menu-container .menu li a {
-	display: block;
-}
 
 .menu-item-16 a {
 	background: url("images/menu_blue.gif") 0 0 repeat-x;
@@ -300,77 +314,52 @@ ol, ul {
 	background: url("images/menu_green_a.png") center 0 no-repeat;
 }
 
-.menu-menu-container .menu li ul li.first {
-	background: url("images/dropdown_1_first.png") no-repeat scroll 0 top transparent;
-	padding-top: 10px;
-}
-.menu-menu-container .menu li ul li {
-	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
-	clear: both;
-	display: block;
-	height: auto;
-	line-height: 1.4em;
-	margin: 0;
-	position: relative;
-	width: 140px;
-}
-.menu-menu-container .menu li {
-	background: url("images/topmenu_line.gif") no-repeat scroll right 5px transparent;
-	display: block;
-	float: left;
-	height: 70px;
-	list-style: none outside none;
-	margin: 0;
-	position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* END - MENU RODRIGO  */
+
+
+/* top search */
+#access form {
+	background:url(images/search_bg.gif) 0 0 no-repeat;
+	display: inline;
+	float: right;
+	height: 31px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 20px;
+	top: -50px;
+	width: 315px;
+	z-index: 5;
+}
+
+#access form#searchform div input#s {
+	float:left;
+	padding:0 5px 0 10px;
+	width:266px;
+	margin:0;
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:29px;
+	height:31px;
+	font-weight:normal;
+	text-transform:uppercase;
+	background:#efefef;
+	border:none;
+}
+
+#access form#searchform div input#searchsubmit  {
+	width:33px;
+	height:31px;
+	text-indent:300px;
+	overflow:hidden;
+	cursor:pointer;
+	background:url(images/search_btn.gif) 0 0 no-repeat;
+	float:left;
+	margin:0;
+	padding:0;
+	border: none;
+}
 
 
 /* =Content
