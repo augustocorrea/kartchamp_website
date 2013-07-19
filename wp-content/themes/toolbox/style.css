@@ -23,13 +23,13 @@ body {
 #page {
 	display: block;
 	margin: 0 auto;
-    width: 960px;
+  width: 960px;
+  background: url("images/background_transparent.png") repeat left top;
 }
 #primary {
 	float: left;
 	margin: 0 -240px 0 0;
 	width: 100%;
-	background: url("images/background_transparent.png") no-repeat center top;
 }
 #content {
 	margin: 0 280px 0 0;

@@ -16,22 +16,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-//define('DB_NAME', 'augu115_kartchamp');
+define('DB_NAME', 'augu115_kartchamp');
 
 /** MySQL database username */
-//define('DB_USER', 'augu115_website2');
+define('DB_USER', 'augu115_website2');
 
 /** MySQL database password */
-//define('DB_PASSWORD', '1P,ypMskr{pP');
+define('DB_PASSWORD', '1P,ypMskr{pP');
 
 /** MySQL hostname */
-//define('DB_HOST', '201.235.253.60');
+define('DB_HOST', '201.235.253.60');
 
 /** Database Charset to use in creating database tables. */
-//define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-//define('DB_COLLATE', '');
+define('DB_COLLATE', '');
 
 
 // ** MySQL settings - You can get this info from your web host ** //
@@ -39,19 +39,19 @@
 define('DB_NAME', 'kartchamp');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+//define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+//define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+//define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+//define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+//define('DB_COLLATE', '');
 
 
 
