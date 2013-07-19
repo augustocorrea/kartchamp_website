@@ -39,16 +39,21 @@ body {
 #primary {
 	float: left;
 	margin: 0 -240px 0 0;
-	width: 100%;
+	width: 600px;
+	padding: 15px 25px;
+	
 }
 #content {
-	margin: 0 280px 0 0;
+	
 }
+
 #main .widget-area {
 	float: right;
 	overflow: hidden;
-	width: 220px;
+	width: 260px;
+	padding: 15px 25px;
 }
+
 #colophon {
 	clear: both;
 	display: block;
