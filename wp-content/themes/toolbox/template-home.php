@@ -17,7 +17,6 @@ Template Name: Home Page
  */
 
 get_header(); ?>
-    <br clear="all" />
     <div id="marquee">
       <?php echo do_shortcode("[metaslider id=7]"); ?>
     </div>
