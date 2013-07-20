@@ -96,11 +96,12 @@ body {
 /* =Header
 -------------------------------------------------------------- */
 
-#site-title {
+/*#site-title {
 	font-size: 2em;
 	font-weight: bold;
 	margin: .67em 0;
-}
+}*/
+
 #site-description {
 	font-size: 1em;
 	font-weight: normal;
@@ -614,6 +615,16 @@ article.comment {
   margin: 0px auto;
 }
 
+/* LOGO */
+#site-title a {
+	background: url("images/logo_blanco.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 80px;
+	overflow: hidden;
+	text-indent: -1000px;
+	background-size: contain;
+}
 
-
-
+#site-description {
+	display: none;
+}
