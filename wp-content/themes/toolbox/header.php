@@ -53,7 +53,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/dark-hive/jquery-ui.css" />
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 

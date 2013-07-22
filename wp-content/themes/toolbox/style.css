@@ -574,6 +574,49 @@ textarea {
 	color: #cc0033;
 }
 
+/* =Race Display
+-------------------------------------------------------------- */
+
+.ui-widget-content {
+  background: none !important;
+  font: normal 11px Arial;
+}
+
+.ui-widget-content ul li a {
+  font: normal 11px Arial;
+}
+
+.ui-widget-content div.driver {
+  padding: 20px 0;
+  border-bottom: solid 1px #fff;
+}
+
+.ui-widget-content div.driver:last-child {
+  border-bottom: none;
+}
+
+.ui-widget-content div.driver .photo {
+  width: 110px;
+  float: left;
+}
+
+.ui-widget-content div.driver .photo p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ui-widget-content div.driver .table {
+  width: 445px;
+  float: left;
+}
+
+.ui-widget-content table {
+  width: 100%;
+}
+
+.ui-widget-content table td {
+  padding: 5px;
+} 
 
 /* =Comments
 -------------------------------------------------------------- */
