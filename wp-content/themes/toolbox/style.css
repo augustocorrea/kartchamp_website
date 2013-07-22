@@ -92,7 +92,6 @@ body {
 	margin-right: auto;
 }
 
-
 /* =Header
 -------------------------------------------------------------- */
 
@@ -362,6 +361,19 @@ menu-menu-container .menu li ul li.first {
 	border: none;
 }
 
+/* =Home Page
+-------------------------------------------------------------- */
+
+.home .home-sponsors ul li img {
+  max-width: 80px;
+  max-height: 60px;
+}
+
+.home .medium-width {
+  width: 280px;
+  float: left;
+  padding: 0 20px 0 0;
+}
 
 /* =Content
 -------------------------------------------------------------- */

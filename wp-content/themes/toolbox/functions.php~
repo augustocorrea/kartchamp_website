@@ -22,14 +22,6 @@
  * @since Toolbox 0.1
  */
 
-function get_results(){
-  global $wpdb;
-  $query = "SELECT * FROM r_questions WHERE parts_id = '$pid'";
-  $rs = $wpdb->get_results($query);
-  return $rs;
-}
-
-
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
