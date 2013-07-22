@@ -25,7 +25,7 @@ body {
 
 #page {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto -15px;
 	width: 960px;
 }
 
@@ -617,14 +617,33 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 50px 0;
+	padding: 0 0 50px;
 	background-color: #0a0d11;
 	background: #0a0d11 url("images/bkg_footer.jpg") no-repeat center top;
 }
 
 #wrapper-footer {
+  background: #000000;
   width: 960px;
   margin: 0px auto;
+}
+
+#wrapper-footer ul {
+  display: inline-block;
+}
+
+#wrapper-footer li.title {
+  border-bottom: 1px solid #3B3E40;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+#wrapper-footer li a {
+  color: #737373;
+  font-size: 13px;
+  line-height: 27px;
+  text-decoration: none;
 }
 
 /* LOGO */
