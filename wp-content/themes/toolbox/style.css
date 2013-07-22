@@ -19,7 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
 	background: #282924 url("images/background.jpg") no-repeat center top;
 	color: #ffffff; 
-	font: normal 15px Arial;
+	font: normal 13px Arial;
 	margin: 0px !important;
 }
 
@@ -39,7 +39,8 @@ body {
 }
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
+	/* margin: 0 -240px 0 0; */
+	margin: 0;
 	width: 600px;
 	padding: 15px 25px;
 	
@@ -137,6 +138,28 @@ body {
 #marquee .caption-wrap {
   background: none !important;
   opacity: 10 !important;
+}
+
+.full-width.home-extract > p {
+  text-align: justify;
+}
+.entry-content p a.btn-more {
+	background: url("images/boton.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 5px;
+	width: 112px;
+	text-decoration: none;
+	color: #656866;
+}
+
+.entry-content p a.btn-more:visited {
+	color: #656866;
+}
+
+.entry-content p a.btn-more:hover {
+	color: #FF392D;
 }
 
 /* =Menu
@@ -735,3 +758,38 @@ article.comment {
 	width: 151px;
 }
 
+.event-list .start-date, .event-list .end-date {
+	background-color: #DB4F3D !important;
+}
+
+.event-day {
+	color: #262827;
+}
+
+.slideshowlink {
+	display: none !important;
+}
+
+/* =Inscripcion
+-------------------------------------------------------------- */
+body.page-id-5 #content {
+	background: none repeat scroll 0 0 #2E2E2E;
+	border: 1px solid #808080;
+	line-height: 1.7em;
+	margin-top: 3px;
+}
+
+body.page-id-5 #content h1 {
+	margin-left: 20px;
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+body.page-id-5 .control-group .controls input {
+	width: 277px;
+}
+
+body.page-id-5 .formular .input-append input {
+	width: 250px;
+}
