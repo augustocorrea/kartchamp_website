@@ -39,7 +39,8 @@ body {
 }
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
+	/* margin: 0 -240px 0 0; */
+	margin: 0;
 	width: 600px;
 	padding: 15px 25px;
 	
@@ -139,8 +140,6 @@ body {
   opacity: 10 !important;
 }
 
-<<<<<<< HEAD
-=======
 .full-width.home-extract > p {
   text-align: justify;
 }
@@ -163,7 +162,6 @@ body {
 	color: #FF392D;
 }
 
->>>>>>> 554e89025859a40870c124145ec6ce6d99e39367
 /* =Menu
 -------------------------------------------------------------- */
 
@@ -717,3 +715,38 @@ article.comment {
 	width: 151px;
 }
 
+.event-list .start-date, .event-list .end-date {
+	background-color: #DB4F3D !important;
+}
+
+.event-day {
+	color: #262827;
+}
+
+.slideshowlink {
+	display: none !important;
+}
+
+/* =Inscripcion
+-------------------------------------------------------------- */
+body.page-id-5 #content {
+	background: none repeat scroll 0 0 #2E2E2E;
+	border: 1px solid #808080;
+	line-height: 1.7em;
+	margin-top: 3px;
+}
+
+body.page-id-5 #content h1 {
+	margin-left: 20px;
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+body.page-id-5 .control-group .controls input {
+	width: 277px;
+}
+
+body.page-id-5 .formular .input-append input {
+	width: 250px;
+}
