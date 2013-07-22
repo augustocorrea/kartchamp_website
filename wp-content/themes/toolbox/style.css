@@ -139,10 +139,6 @@ body {
   opacity: 10 !important;
 }
 
-.full-width.home-extract > p {
-  text-align: justify;
-}
-
 /* =Menu
 -------------------------------------------------------------- */
 
@@ -644,3 +640,47 @@ article.comment {
 #site-description {
 	display: none;
 }
+
+/*Contact Form*/
+
+.control-group .control-label {
+	margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+color: #a6a6a6;
+font-style: italic;
+}
+
+.control-group .controls input {
+	width: 200px;
+border: 1px solid #dedede;
+background: #ececee;
+}
+.control-group .controls .add-on {
+	border: 1px solid #dedede;
+background: #ececee;
+}
+
+.form-actions {
+	background: none;
+	background-color: transparent !important;
+	border: none !important;
+}
+
+.form-actions .btn.button-primary,
+.form-actions .btn.button-primary:hover{
+	background: url(images/btn_submit.png) no-repeat;
+width: 151px;
+height: 42px;
+text-align: left;
+padding: 0 20px 0 17px;
+color: #fff;
+font-size: 15px;
+text-transform: uppercase;
+line-height: 42px;
+border: none;
+text-shadow:none;
+}
+
