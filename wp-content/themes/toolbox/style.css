@@ -23,6 +23,10 @@ body {
 	margin: 0px !important;
 }
 
+h1, h2 {
+	font-size: 20px;
+}
+
 #page {
 	display: block;
 	margin: 0 auto;
@@ -739,8 +743,6 @@ body.page-id-5 #content {
 body.page-id-5 #content h1 {
 	margin-left: 20px;
 	color: #ffffff;
-	font-size: 18px;
-	text-transform: uppercase;
 }
 
 body.page-id-5 .control-group .controls input {
