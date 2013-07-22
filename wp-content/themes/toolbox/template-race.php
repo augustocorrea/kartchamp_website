@@ -38,18 +38,14 @@ get_header(); ?>
                     <p><?php echo $rs[$x][$y]->nombre_apellido; ?></p>
                   </div>
                   <div class="table">
-                    
                     <?php $scores = get_my_scores_by_drivers_id($rs[$x][$y]->id); ?>
                     <!-- [driver_id][race_id] -->
                     <?php $race = get_my_races(); ?>
-                    
-                    
-                    <table border="1">
-                    
+                    <table>
                       <tr>
-                        <td>-</td>
+                        <th> </th>
                         <?php for($m=0 ; $m<count($race) ; $m++): ?>
-                          <td><?php echo $race[$m]->name; ?></td>
+                          <th><?php echo $race[$m]->name; ?></th>
                         <?php endfor; ?>
                       </tr>
                       <tr>
@@ -71,10 +67,10 @@ get_header(); ?>
                         <?php endfor; ?>
                       </tr>
                     </table>
-                  
                   </div>
+                  <br clear="all" />
                 </div>
-              
+                
               <?php endfor; ?>
             </div>
           <?php endfor; ?>

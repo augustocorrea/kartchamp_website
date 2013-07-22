@@ -30,7 +30,7 @@ body {
 }
 
 #page {
-	background: url("images/background_transparent.png") repeat-x left 95px;
+	background: url("images/background_transparent.png") repeat-x left 100px;
 	min-height: 700px;
 }
 
@@ -370,9 +370,9 @@ menu-menu-container .menu li ul li.first {
 }
 
 .home .medium-width {
-  width: 260px;
+  width: 280px;
   float: left;
-  padding: 0 40px 0 0;
+  padding: 0 20px 0 0;
 }
 
 /* =Content
@@ -574,6 +574,45 @@ textarea {
 	color: #cc0033;
 }
 
+/* =Race Display
+-------------------------------------------------------------- */
+
+.ui-widget-content {
+  background: none !important;
+  font: normal 11px Arial;
+}
+
+.ui-widget-content div.driver {
+  padding: 20px 0;
+  border-bottom: solid 1px #fff;
+}
+
+.ui-widget-content div.driver:last-child {
+  border-bottom: none;
+}
+
+.ui-widget-content div.driver .photo {
+  width: 110px;
+  float: left;
+}
+
+.ui-widget-content div.driver .photo p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ui-widget-content div.driver .table {
+  width: 445px;
+  float: left;
+}
+
+.ui-widget-content table {
+  width: 100%;
+}
+
+.ui-widget-content table td {
+  padding: 5px;
+} 
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -640,3 +679,55 @@ article.comment {
 #site-description {
 	display: none;
 }
+
+/*Contact Form*/
+
+.control-group .control-label {
+	border: 0;
+	color: #a6a6a6;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	vertical-align: baseline;
+}
+
+.control-group .controls input {
+	background: #ececee;
+	border: 1px solid #dedede;
+	width: 200px;
+}
+.control-group .controls .add-on {
+	background: #ececee;
+	border: 1px solid #dedede;
+}
+
+.formular input[type="file"] {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	width: 130% !important;
+}
+
+.form-actions {
+	background: none;
+	background-color: transparent !important;
+	border: none !important;
+	padding-top: 0 !important;
+}
+
+.form-actions .btn.button-primary,
+.form-actions .btn.button-primary:hover{
+	background: url(images/btn_submit.png) no-repeat;
+	border: none;
+	color: #fff;
+	height: 42px;
+	font-size: 15px;
+	line-height: 42px;
+	padding: 0 20px 0 17px;
+	text-align: left;
+	text-shadow:none;
+	text-transform: uppercase;
+	width: 151px;
+}
+
