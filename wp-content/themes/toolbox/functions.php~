@@ -22,6 +22,61 @@
  * @since Toolbox 0.1
  */
 
+function get_my_categories() {
+  global $wpdb;
+  $query = "SELECT * FROM app_categoria";
+  $rs = $wpdb->get_results($query);
+  return $rs;
+}
+
+function get_my_drivers_by_categories(){
+  $categories = get_my_categories();
+  //echo '<pre>';
+  //print_r($categories);
+  $rs = array();
+  global $wpdb;
+  for($x=0 ; $x<count($categories) ; $x++) {
+    $min = $categories[$x]->minimo;
+    $max = $categories[$x]->maximo;
+    $query = "SELECT id,nombre_apellido,foto,peso FROM app_piloto WHERE peso > '$min' AND peso < '$max'";
+    $rs[$x] = $wpdb->get_results($query);
+    $rs[$x]['category_name'] = $categories[$x]->nombre;
+  }
+  //print_r($rs);
+  //die();
+  return $rs;
+}
+
+
+get_my_scores_by_drivers_id(3);
+
+function get_my_scores_by_drivers_id($id) {
+  global $wpdb;
+  $output = array();
+  $races = get_my_races();
+  foreach($races as $value):
+    $rid = $value->id;
+    $query = "SELECT * FROM app_tiempo WHERE piloto_id = '$id' AND carrera_id = '$rid'";
+    $rs = $wpdb->get_results($query);
+    $output[$id][$rid] = $rs[0];
+  endforeach;
+  echo '<pre>';
+  print_r($output);
+  die();
+  //return $output;
+}
+
+// [driver_id][race_id]
+
+function get_my_races() {
+  global $wpdb;
+  $query = "SELECT * FROM app_carrera";
+  $rs = $wpdb->get_results($query);
+  //print_r($rs);
+  //die();
+  return $rs;
+}
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
