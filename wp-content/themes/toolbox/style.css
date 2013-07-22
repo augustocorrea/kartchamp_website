@@ -644,43 +644,51 @@ article.comment {
 /*Contact Form*/
 
 .control-group .control-label {
+	border: 0;
+	color: #a6a6a6;
+	font-size: 100%;
 	margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-vertical-align: baseline;
-color: #a6a6a6;
-font-style: italic;
+	padding: 0;
+	font-style: italic;
+	vertical-align: baseline;
 }
 
 .control-group .controls input {
+	background: #ececee;
+	border: 1px solid #dedede;
 	width: 200px;
-border: 1px solid #dedede;
-background: #ececee;
 }
 .control-group .controls .add-on {
+	background: #ececee;
 	border: 1px solid #dedede;
-background: #ececee;
+}
+
+.formular input[type="file"] {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	width: 130% !important;
 }
 
 .form-actions {
 	background: none;
 	background-color: transparent !important;
 	border: none !important;
+	padding-top: 0 !important;
 }
 
 .form-actions .btn.button-primary,
 .form-actions .btn.button-primary:hover{
 	background: url(images/btn_submit.png) no-repeat;
-width: 151px;
-height: 42px;
-text-align: left;
-padding: 0 20px 0 17px;
-color: #fff;
-font-size: 15px;
-text-transform: uppercase;
-line-height: 42px;
-border: none;
-text-shadow:none;
+	border: none;
+	color: #fff;
+	height: 42px;
+	font-size: 15px;
+	line-height: 42px;
+	padding: 0 20px 0 17px;
+	text-align: left;
+	text-shadow:none;
+	text-transform: uppercase;
+	width: 151px;
 }
 
