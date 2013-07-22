@@ -142,6 +142,24 @@ body {
 .full-width.home-extract > p {
   text-align: justify;
 }
+.entry-content p a.btn-more {
+	background: url("images/boton.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 5px;
+	width: 112px;
+	text-decoration: none;
+	color: #656866;
+}
+
+.entry-content p a.btn-more:visited {
+	color: #656866;
+}
+
+.entry-content p a.btn-more:hover {
+	color: #FF392D;
+}
 
 /* =Menu
 -------------------------------------------------------------- */
