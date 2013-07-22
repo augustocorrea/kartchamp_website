@@ -139,6 +139,8 @@ body {
   opacity: 10 !important;
 }
 
+<<<<<<< HEAD
+=======
 .full-width.home-extract > p {
   text-align: justify;
 }
@@ -161,6 +163,7 @@ body {
 	color: #FF392D;
 }
 
+>>>>>>> 554e89025859a40870c124145ec6ce6d99e39367
 /* =Menu
 -------------------------------------------------------------- */
 
@@ -662,3 +665,55 @@ article.comment {
 #site-description {
 	display: none;
 }
+
+/*Contact Form*/
+
+.control-group .control-label {
+	border: 0;
+	color: #a6a6a6;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	vertical-align: baseline;
+}
+
+.control-group .controls input {
+	background: #ececee;
+	border: 1px solid #dedede;
+	width: 200px;
+}
+.control-group .controls .add-on {
+	background: #ececee;
+	border: 1px solid #dedede;
+}
+
+.formular input[type="file"] {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	width: 130% !important;
+}
+
+.form-actions {
+	background: none;
+	background-color: transparent !important;
+	border: none !important;
+	padding-top: 0 !important;
+}
+
+.form-actions .btn.button-primary,
+.form-actions .btn.button-primary:hover{
+	background: url(images/btn_submit.png) no-repeat;
+	border: none;
+	color: #fff;
+	height: 42px;
+	font-size: 15px;
+	line-height: 42px;
+	padding: 0 20px 0 17px;
+	text-align: left;
+	text-shadow:none;
+	text-transform: uppercase;
+	width: 151px;
+}
+
