@@ -139,6 +139,31 @@ body {
   opacity: 10 !important;
 }
 
+<<<<<<< HEAD
+=======
+.full-width.home-extract > p {
+  text-align: justify;
+}
+.entry-content p a.btn-more {
+	background: url("images/boton.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 5px;
+	width: 112px;
+	text-decoration: none;
+	color: #656866;
+}
+
+.entry-content p a.btn-more:visited {
+	color: #656866;
+}
+
+.entry-content p a.btn-more:hover {
+	color: #FF392D;
+}
+
+>>>>>>> 554e89025859a40870c124145ec6ce6d99e39367
 /* =Menu
 -------------------------------------------------------------- */
 
