@@ -29,7 +29,7 @@ h1, h2 {
 
 #page {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto -15px;
 	width: 960px;
 }
 
@@ -601,6 +601,49 @@ textarea {
 	color: #cc0033;
 }
 
+/* =Race Display
+-------------------------------------------------------------- */
+
+.ui-widget-content {
+  background: none !important;
+  font: normal 11px Arial;
+}
+
+.ui-widget-content ul li a {
+  font: normal 11px Arial;
+}
+
+.ui-widget-content div.driver {
+  padding: 20px 0;
+  border-bottom: solid 1px #fff;
+}
+
+.ui-widget-content div.driver:last-child {
+  border-bottom: none;
+}
+
+.ui-widget-content div.driver .photo {
+  width: 110px;
+  float: left;
+}
+
+.ui-widget-content div.driver .photo p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ui-widget-content div.driver .table {
+  width: 445px;
+  float: left;
+}
+
+.ui-widget-content table {
+  width: 100%;
+}
+
+.ui-widget-content table td {
+  padding: 5px;
+} 
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -644,7 +687,7 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 50px 0;
+	padding: 0 0 50px;
 	background-color: #0a0d11;
 	background: #0a0d11 url("images/bkg_footer.jpg") no-repeat center top;
 }
@@ -652,6 +695,44 @@ article.comment {
 #wrapper-footer {
   width: 960px;
   margin: 0px auto;
+}
+
+#wrapper-footer ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 128px;
+}
+
+#wrapper-footer ul.column-e {
+  width: 230px;
+}
+
+#wrapper-footer li.title {
+  border-bottom: 1px solid #3B3E40;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+#wrapper-footer li a {
+  color: #737373;
+  font-size: 13px;
+  line-height: 29px;
+  text-decoration: none;
+}
+
+.column-e li + li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.column-e li + li + li + li {
+  color: #454545;
+  display: block;
+  font-size: 13px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 /* LOGO */
