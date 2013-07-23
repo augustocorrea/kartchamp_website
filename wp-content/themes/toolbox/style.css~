@@ -1,4 +1,4 @@
-/*
+	/*
 Theme Name: Toolbox
 Theme URI: http://wordpress.org/extend/themes/toolbox
 Author: Automattic
@@ -39,8 +39,9 @@ h1, h2 {
 }
 
 #marquee {
-	
+	padding-bottom: 25px;
 }
+
 #primary {
 	float: left;
 	/* margin: 0 -240px 0 0; */
@@ -105,6 +106,36 @@ h1, h2 {
 	font-weight: bold;
 	margin: .67em 0;
 }*/
+
+hgroup {
+	margin: 15px 0;
+}
+
+h1#site-title,
+div#top_menu {
+	display: inline-block;
+}
+
+h1#site-title {
+	margin: 0;
+}
+
+div#top_menu {
+	float: right;
+}
+
+div#top_menu ul li {
+	display: inline-block;
+}
+
+div#top_menu ul li a {
+  background: url("images/arrow_menu_gray.png") no-repeat 0 2px transparent;
+  color: #5491D8;
+  font-size: 12px;
+  margin-left: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
 
 #site-description {
 	font-size: 1em;
@@ -402,6 +433,12 @@ menu-menu-container .menu li ul li.first {
   padding: 0 20px 0 0;
 }
 
+.home #content .home-sponsors ul li {
+  display: inline-block;
+  margin: 0 35px;
+}
+
+
 /* =Content
 -------------------------------------------------------------- */
 
@@ -616,7 +653,7 @@ textarea {
 
 .ui-widget-content div.driver {
   padding: 20px 0;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #999;
 }
 
 .ui-widget-content div.driver:last-child {
@@ -642,14 +679,14 @@ textarea {
 
 .ui-widget-content table {
   width: 100%;
-  border: solid 1px #888;
+  border: solid 1px #444;
 }
 
 .ui-widget-content table td,
 .ui-widget-content table th {
-  padding: 5px;
-  border: solid 1px #555555;
-} 
+  padding: 3px;
+  border: solid 1px #444;
+}
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -672,6 +709,18 @@ article.comment {
 }
 #respond .form-allowed-tags code {
 	display: block;
+}
+
+#tabs ul li.ui-corner-top.ui-state-hover {
+  background: none !important;
+  background-color: #4F1D16 !important;
+  border: solid 1px #555 !important;
+}
+
+#tabs ul li.ui-corner-top.ui-state-active {
+  background: none !important;
+  background-color: #DB4F3D !important;
+  border: solid 1px #888 !important;
 }
 
 
@@ -741,6 +790,11 @@ article.comment {
   margin-top: 0px;
 }
 
+#wrapper-footer .column-e .airesDesign {
+  text-decoration: none;
+  font-style: italic;
+}
+
 /* LOGO */
 #site-title a {
 	background: url("images/logo_blanco.png") no-repeat scroll 0 0 transparent;
@@ -749,6 +803,7 @@ article.comment {
 	overflow: hidden;
 	text-indent: -1000px;
 	background-size: contain;
+	width: 115px;
 }
 
 #site-description {
@@ -757,7 +812,8 @@ article.comment {
 
 /*Contact Form*/
 
-.control-group .control-label {
+.control-group .control-label,
+body.Contacto .control-group .control-label {
 	border: 0;
 	color: #a6a6a6;
 	font-size: 100%;
@@ -765,6 +821,13 @@ article.comment {
 	padding: 0;
 	font-style: italic;
 	vertical-align: baseline;
+}
+
+body.Contacto .control-group .control-label {
+	float: left;
+	padding-top: 5px;
+	text-align: right;
+	width: 275px;
 }
 
 .control-group .controls input {
@@ -820,7 +883,8 @@ article.comment {
 
 /* =Inscripcion
 -------------------------------------------------------------- */
-body.page-id-5 #content {
+body.page-id-5 #content,
+body.Contacto #content {
 	background: none repeat scroll 0 0 #2E2E2E;
 	border: 1px solid #555555;
 	line-height: 1.7em;
@@ -830,7 +894,9 @@ body.page-id-5 #content {
   border-radius: 6px;
 }
 
-body.page-id-5 #content h1 {
+body.page-id-5 #content h1,
+body.Contacto #content h1,
+body.Contacto #content p {
 	margin-left: 20px;
 	color: #ffffff;
 }

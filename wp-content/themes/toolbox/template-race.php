@@ -43,7 +43,7 @@ get_header(); ?>
                     <?php $scores = get_my_scores_by_drivers_id($rs[$x][$y]->id); ?>
                     <!-- [driver_id][race_id] -->
                     <?php $race = get_my_races(); ?>
-                    <table>
+                    <table cellspacing="0">
                       <tr>
                         <th> </th>
                         <?php for($m=0 ; $m<count($race) ; $m++): ?>

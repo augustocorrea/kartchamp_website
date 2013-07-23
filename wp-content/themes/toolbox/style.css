@@ -39,8 +39,9 @@ h1, h2 {
 }
 
 #marquee {
-	
+	padding-bottom: 20px;
 }
+
 #primary {
 	float: left;
 	/* margin: 0 -240px 0 0; */
@@ -652,7 +653,7 @@ textarea {
 
 .ui-widget-content div.driver {
   padding: 20px 0;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #999;
 }
 
 .ui-widget-content div.driver:last-child {
@@ -678,14 +679,14 @@ textarea {
 
 .ui-widget-content table {
   width: 100%;
-  border: solid 1px #777;
+  border: solid 1px #444;
 }
 
 .ui-widget-content table td,
 .ui-widget-content table th {
-  padding: 5px;
-  border: solid 1px #777;
-} 
+  padding: 3px;
+  border: solid 1px #444;
+}
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -708,6 +709,18 @@ article.comment {
 }
 #respond .form-allowed-tags code {
 	display: block;
+}
+
+#tabs ul li.ui-corner-top.ui-state-hover {
+  background: none !important;
+  background-color: #4F1D16 !important;
+  border: solid 1px #555 !important;
+}
+
+#tabs ul li.ui-corner-top.ui-state-active {
+  background: none !important;
+  background-color: #DB4F3D !important;
+  border: solid 1px #888 !important;
 }
 
 
