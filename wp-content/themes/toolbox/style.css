@@ -1,4 +1,4 @@
-/*
+	/*
 Theme Name: Toolbox
 Theme URI: http://wordpress.org/extend/themes/toolbox
 Author: Automattic
@@ -793,7 +793,8 @@ article.comment {
 
 /*Contact Form*/
 
-.control-group .control-label {
+.control-group .control-label,
+body.Contacto .control-group .control-label {
 	border: 0;
 	color: #a6a6a6;
 	font-size: 100%;
@@ -801,6 +802,13 @@ article.comment {
 	padding: 0;
 	font-style: italic;
 	vertical-align: baseline;
+}
+
+body.Contacto .control-group .control-label {
+	float: left;
+	padding-top: 5px;
+	text-align: right;
+	width: 275px;
 }
 
 .control-group .controls input {
@@ -856,14 +864,17 @@ article.comment {
 
 /* =Inscripcion
 -------------------------------------------------------------- */
-body.page-id-5 #content {
+body.page-id-5 #content,
+body.Contacto #content {
 	background: none repeat scroll 0 0 #2E2E2E;
 	border: 1px solid #808080;
 	line-height: 1.7em;
 	margin-top: 3px;
 }
 
-body.page-id-5 #content h1 {
+body.page-id-5 #content h1,
+body.Contacto #content h1,
+body.Contacto #content p {
 	margin-left: 20px;
 	color: #ffffff;
 }
