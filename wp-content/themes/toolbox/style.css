@@ -13,6 +13,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
 /* =Structure
 -------------------------------------------------------------- */
 
@@ -25,6 +27,13 @@ body {
 
 h1, h2 {
 	font-size: 20px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #eee;
+}
+
+ul li.title {
+	font-family: 'Fjalla One', sans-serif;
+	color: #eee;
 }
 
 #page {
@@ -430,7 +439,12 @@ menu-menu-container .menu li ul li.first {
 .home .medium-width {
   width: 280px;
   float: left;
-  padding: 0 20px 0 0;
+  padding: 10px 20px 10px 0;
+}
+
+.home .home-sponsors,
+.home .home-awards {
+  padding: 10px 0;
 }
 
 .home #content .home-sponsors ul li {
@@ -661,19 +675,23 @@ textarea {
 }
 
 .ui-widget-content div.driver .photo {
-  width: 110px;
+  width: 80px;
   float: left;
+}
+
+.ui-widget-content div.driver .photo img {
+  width: 70px;
 }
 
 .ui-widget-content div.driver .photo p {
   margin: 0px;
   padding: 0px;
-  width: 100px;
+  width: 70px;
   text-align: center;
 }
 
 .ui-widget-content div.driver .table {
-  width: 445px;
+  width: 475px;
   float: left;
 }
 

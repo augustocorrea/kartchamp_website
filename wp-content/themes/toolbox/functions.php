@@ -22,11 +22,58 @@
  * @since Toolbox 0.1
  */
 
+function get_pilot_by_id($id) {
+  global $wpdb;
+  $query = "SELECT nombre_apellido FROM app_piloto WHERE id = '$id'";
+  $rs = $wpdb->get_results($query);
+  return $rs[0]->nombre_apellido;
+}
+
 function get_my_categories() {
   global $wpdb;
   $query = "SELECT * FROM app_categoria";
   $rs = $wpdb->get_results($query);
   return $rs;
+}
+// $scores[race][category][pilot]
+
+
+function get_pilot_category($pilot_id) {
+  $categories = get_my_categories();
+  //echo '<pre>';
+  //print_r($categories);
+  //$rs = array();
+  global $wpdb;
+  $query = "SELECT id,nombre_apellido,foto,peso FROM app_piloto WHERE id = '$pilot_id'";
+  $pilot = $wpdb->get_results($query);
+  for($x=0 ; $x<count($categories) ; $x++) {
+    $min = $categories[$x]->minimo;
+    $max = $categories[$x]->maximo;
+    if($pilot[0]->peso > $min && $pilot[0]->peso < $max) {
+      return $categories[$x]->id;
+    }
+  }
+  
+}
+
+function get_scores_by_category() {
+  global $wpdb;
+  $output = array();
+  $query = "SELECT * FROM app_tiempo";
+  $rs = $wpdb->get_results($query);
+  //echo '<pre>';
+  //print_r($rs);
+  for($x=0 ; $x<count($rs) ; $x++) {
+    $pilot_category = get_pilot_category($rs[$x]->piloto_id);
+    $output[$rs[$x]->carrera_id][$pilot_category][$rs[$x]->piloto_id] = $rs[$x];
+    //print_r($output);
+    //echo get_pilot_category($rs[$x]->piloto_id);
+  }
+  return $output;
+  //echo '<pre>';
+  //print_r($rs);
+  //die();
+  
 }
 
 function get_my_drivers_by_categories(){

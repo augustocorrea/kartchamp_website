@@ -23,6 +23,11 @@ get_header(); ?>
         
         <h1>Resultados de los torneos por corredor</h1>
         
+        <ul>
+          <li><a href="torneo" title="Resultados por corredor">Resultados por corredor</a></li>
+          <li><a href="resultados-de-los-torneos-por-carrera" title="Resultados por carrera">Resultados por carrera</a></li>
+        </ul>
+        
         <?php $rs = get_my_drivers_by_categories(); ?>
         <div id="tabs">
           <ul>
@@ -36,7 +41,7 @@ get_header(); ?>
               <?php for($y=0 ; $y<count($rs[$x])-1 ; $y++): ?>
                 <div class="driver">
                   <div class="photo">
-                    <img style="width: 100px;" src="<?php echo thumb($rs[$x][$y]->foto); ?>" alt="<?php echo $rs[$x][$y]->nombre_apellido; ?>">
+                    <img src="<?php echo thumb($rs[$x][$y]->foto); ?>" alt="<?php echo $rs[$x][$y]->nombre_apellido; ?>">
                     <p><?php echo $rs[$x][$y]->nombre_apellido; ?></p>
                   </div>
                   <div class="table" border="0">
@@ -53,19 +58,19 @@ get_header(); ?>
                       <tr>
                         <td>Clasificacion</td>
                         <?php for($m=1 ; $m<count($race)+1 ; $m++): ?>
-                          <td><?php if(!empty($scores[$rs[$x][$y]->id][$m]->clasificacion_marca)){ echo $scores[$rs[$x][$y]->id][$m]->clasificacion_marca . " (Puesto: " . $scores[$rs[$x][$y]->id][$m]->clasificacion_puesto . ")"; }else{ echo "-"; } ?></td>
+                          <td><?php if(!empty($scores[$rs[$x][$y]->id][$m]->clasificacion_marca)){ echo "Tiempo: " . $scores[$rs[$x][$y]->id][$m]->clasificacion_marca . "<br />Puesto: " . $scores[$rs[$x][$y]->id][$m]->clasificacion_puesto; }else{ echo "-"; } ?></td>
                         <?php endfor; ?>
                       </tr>
                       <tr>
                         <td>Serie</td>
                         <?php for($m=1 ; $m<count($race)+1 ; $m++): ?>
-                          <td><?php if(!empty($scores[$rs[$x][$y]->id][$m]->serie_marca)){ echo $scores[$rs[$x][$y]->id][$m]->serie_marca . " (Puesto: " . $scores[$rs[$x][$y]->id][$m]->serie_puesto . ")"; }else{ echo "-"; } ?></td>
+                          <td><?php if(!empty($scores[$rs[$x][$y]->id][$m]->serie_marca)){ echo "Tiempo: " . $scores[$rs[$x][$y]->id][$m]->serie_marca . "<br />Puesto: " . $scores[$rs[$x][$y]->id][$m]->serie_puesto; }else{ echo "-"; } ?></td>
                         <?php endfor; ?>
                       </tr>
                       <tr>
                         <td>Final</td>
                         <?php for($m=1 ; $m<count($race)+1 ; $m++): ?>
-                          <td><?php if(!empty($scores[$rs[$x][$y]->id][$m]->final_marca)){ echo $scores[$rs[$x][$y]->id][$m]->final_marca . " (Puesto: " . $scores[$rs[$x][$y]->id][$m]->final_puesto . ")"; }else{ echo "-"; } ?></td>
+                          <td><?php if(!empty($scores[$rs[$x][$y]->id][$m]->final_marca)){ echo "Tiempo: " . $scores[$rs[$x][$y]->id][$m]->final_marca . "<br />Puesto: " . $scores[$rs[$x][$y]->id][$m]->final_puesto; }else{ echo "-"; } ?></td>
                         <?php endfor; ?>
                       </tr>
                     </table>
