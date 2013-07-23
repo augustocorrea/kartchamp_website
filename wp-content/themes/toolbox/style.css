@@ -431,6 +431,22 @@ menu-menu-container .menu li ul li.first {
 /* =Home Page
 -------------------------------------------------------------- */
 
+#selector-of-filter ul li {
+  width: 180px;
+  height: 25px;
+  float: left;
+}
+
+#selector-of-filter ul li a {
+  position: relative;
+  left: 19px;
+  top: 5px;
+}
+#selector-of-filter ul li.right-option a {
+  left: 22px;
+}
+
+
 .home .home-sponsors ul li img {
   max-width: 80px;
   max-height: 60px;

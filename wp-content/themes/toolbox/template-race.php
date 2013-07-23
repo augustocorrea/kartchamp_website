@@ -23,10 +23,12 @@ get_header(); ?>
         
         <h1>Resultados de los torneos por corredor</h1>
         
-        <ul>
-          <li><a href="torneo" title="Resultados por corredor">Resultados por corredor</a></li>
-          <li><a href="resultados-de-los-torneos-por-carrera" title="Resultados por carrera">Resultados por carrera</a></li>
-        </ul>
+        <div id="selector-of-filter">
+          <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-top">
+            <li class="ui-state-default ui-corner-top"><a href="torneo" title="Resultados por corredor">Resultados por corredor</a></li>
+            <li class="ui-state-default ui-corner-top right-option"><a href="resultados-de-los-torneos-por-carrera" title="Resultados por carrera">Resultados por carrera</a></li>
+          </ul>
+        </div>
         
         <?php $rs = get_my_drivers_by_categories(); ?>
         <div id="tabs">
