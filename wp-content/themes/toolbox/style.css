@@ -900,6 +900,7 @@ body.Contacto .control-group .controls .btn:hover{
 	text-shadow:none;
 	text-transform: uppercase;
 	width: 151px;
+	overflow: hidden;
 }
 
 body.Contacto #mapa_kartchamp {
