@@ -21,6 +21,8 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
         
+        <h1>Resultados de los torneos por corredor</h1>
+        
         <?php $rs = get_my_drivers_by_categories(); ?>
         <div id="tabs">
           <ul>
@@ -34,7 +36,7 @@ get_header(); ?>
               <?php for($y=0 ; $y<count($rs[$x])-1 ; $y++): ?>
                 <div class="driver">
                   <div class="photo">
-                    <img style="width: 100px;" src="<?php echo $rs[$x][$y]->foto; ?>" alt="<?php echo $rs[$x][$y]->nombre_apellido; ?>">
+                    <img style="width: 100px;" src="<?php echo thumb($rs[$x][$y]->foto); ?>" alt="<?php echo $rs[$x][$y]->nombre_apellido; ?>">
                     <p><?php echo $rs[$x][$y]->nombre_apellido; ?></p>
                   </div>
                   <div class="table">
@@ -70,13 +72,13 @@ get_header(); ?>
                   </div>
                   <br clear="all" />
                 </div>
-                <br clear="all" />
+                
               <?php endfor; ?>
             </div>
           <?php endfor; ?>
           
         </div>
-        
+        <br />
 			</div><!-- #content -->
 		</div><!-- #primary -->
   <script type="text/javascript" >
