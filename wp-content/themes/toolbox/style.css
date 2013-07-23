@@ -1009,3 +1009,11 @@ body.inscripcion .control-group .controls input {
 body.inscripcion .formular .input-append input {
 	width: 250px;
 }
+
+/*Resultados de busqueda*/
+
+span.tit_res_busqueda,
+body.search-results h1.entry-title a {
+	color: #808080;
+	text-decoration: underline;
+}
