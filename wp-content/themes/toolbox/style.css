@@ -808,14 +808,27 @@ body.Contacto .control-group .control-label {
 	float: left;
 	padding-top: 5px;
 	text-align: right;
-	width: 275px;
+	width: 165px;
 }
 
-.control-group .controls input {
+body.Contacto .control-group .label-modif {
+	line-height: 15px;
+	padding-top: 0;
+}
+
+.control-group .controls input,
+body.Contacto .control-group .controls textarea {
 	background: #ececee;
 	border: 1px solid #dedede;
 	width: 200px;
 }
+
+body.Contacto .control-group .controls input,
+body.Contacto .control-group .controls textarea {
+	margin-left: 25px;	
+	width: 275px;
+}
+
 .control-group .controls .add-on {
 	background: #ececee;
 	border: 1px solid #dedede;
@@ -835,8 +848,15 @@ body.Contacto .control-group .control-label {
 	padding-top: 0 !important;
 }
 
+body.Contacto .control-group .controls .btn {
+	position: relative;
+	left: 188px;
+}
+
 .form-actions .btn.button-primary,
-.form-actions .btn.button-primary:hover{
+body.Contacto .control-group .controls .btn,
+.form-actions .btn.button-primary:hover,
+body.Contacto .control-group .controls .btn:hover{
 	background: url(images/btn_submit.png) no-repeat;
 	border: none;
 	color: #fff;
@@ -850,6 +870,15 @@ body.Contacto .control-group .control-label {
 	width: 151px;
 }
 
+body.Contacto #mapa_kartchamp {
+	margin: 0 auto;
+}
+
+body.Contacto #mapa_kartchamp .flxmap-marker-title,
+body.Contacto #mapa_kartchamp .flxmap-directions-link a {
+	color: #2E2E2E;
+}
+
 .event-list .start-date, .event-list .end-date {
 	background-color: #DB4F3D !important;
 }
@@ -860,6 +889,11 @@ body.Contacto .control-group .control-label {
 
 .slideshowlink {
 	display: none !important;
+}
+
+body.Contacto #content p {
+	font-size: 14px;
+	margin-bottom: 25px;
 }
 
 /* =Inscripcion
@@ -877,6 +911,10 @@ body.Contacto #content h1,
 body.Contacto #content p {
 	margin-left: 20px;
 	color: #ffffff;
+}
+
+body.Contacto #content p {
+	margin-right: 20px;
 }
 
 body.page-id-5 .control-group .controls input {
