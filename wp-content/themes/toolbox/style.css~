@@ -19,13 +19,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
 	background: #282924 url("images/background.jpg") no-repeat center top;
 	color: #ffffff; 
-	font: normal 15px Arial;
+	font: normal 13px Arial;
 	margin: 0px !important;
+}
+
+h1, h2 {
+	font-size: 20px;
 }
 
 #page {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto -15px;
 	width: 960px;
 }
 
@@ -39,9 +43,10 @@ body {
 }
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
+	/* margin: 0 -240px 0 0; */
+	margin: 0;
 	width: 600px;
-	padding: 15px 25px;
+	padding: 0px 25px 15px 25px;
 	
 }
 #content {
@@ -52,7 +57,7 @@ body {
 	float: right;
 	overflow: hidden;
 	width: 260px;
-	padding: 15px 25px;
+	padding: 0px 25px 15px 25px;
 }
 
 #colophon {
@@ -137,6 +142,28 @@ body {
 #marquee .caption-wrap {
   background: none !important;
   opacity: 10 !important;
+}
+
+.full-width.home-extract > p {
+  text-align: justify;
+}
+.entry-content p a.btn-more {
+	background: url("images/boton.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 5px;
+	width: 112px;
+	text-decoration: none;
+	color: #656866;
+}
+
+.entry-content p a.btn-more:visited {
+	color: #656866;
+}
+
+.entry-content p a.btn-more:hover {
+	color: #FF392D;
 }
 
 /* =Menu
@@ -579,6 +606,11 @@ textarea {
 
 .ui-widget-content {
   background: none !important;
+  background-color: #2E2E2E !important;
+  font: normal 11px Arial;
+}
+
+.ui-widget-content ul li a {
   font: normal 11px Arial;
 }
 
@@ -599,6 +631,8 @@ textarea {
 .ui-widget-content div.driver .photo p {
   margin: 0px;
   padding: 0px;
+  width: 100px;
+  text-align: center;
 }
 
 .ui-widget-content div.driver .table {
@@ -608,10 +642,13 @@ textarea {
 
 .ui-widget-content table {
   width: 100%;
+  border: solid 1px #888;
 }
 
-.ui-widget-content table td {
+.ui-widget-content table td,
+.ui-widget-content table th {
   padding: 5px;
+  border: solid 1px #555555;
 } 
 
 /* =Comments
@@ -656,7 +693,7 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 50px 0;
+	padding: 0 0 50px;
 	background-color: #0a0d11;
 	background: #0a0d11 url("images/bkg_footer.jpg") no-repeat center top;
 }
@@ -664,6 +701,44 @@ article.comment {
 #wrapper-footer {
   width: 960px;
   margin: 0px auto;
+}
+
+#wrapper-footer ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 128px;
+}
+
+#wrapper-footer ul.column-e {
+  width: 230px;
+}
+
+#wrapper-footer li.title {
+  border-bottom: 1px solid #3B3E40;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+#wrapper-footer li a {
+  color: #737373;
+  font-size: 13px;
+  line-height: 29px;
+  text-decoration: none;
+}
+
+.column-e li + li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.column-e li + li + li + li {
+  color: #454545;
+  display: block;
+  font-size: 13px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
 /* LOGO */
@@ -731,3 +806,39 @@ article.comment {
 	width: 151px;
 }
 
+.event-list .start-date, .event-list .end-date {
+	background-color: #DB4F3D !important;
+}
+
+.event-day {
+	color: #262827;
+}
+
+.slideshowlink {
+	display: none !important;
+}
+
+/* =Inscripcion
+-------------------------------------------------------------- */
+body.page-id-5 #content {
+	background: none repeat scroll 0 0 #2E2E2E;
+	border: 1px solid #555555;
+	line-height: 1.7em;
+	margin-top: 3px;
+	-webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+body.page-id-5 #content h1 {
+	margin-left: 20px;
+	color: #ffffff;
+}
+
+body.page-id-5 .control-group .controls input {
+	width: 277px;
+}
+
+body.page-id-5 .formular .input-append input {
+	width: 250px;
+}

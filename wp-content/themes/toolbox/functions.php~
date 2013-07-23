@@ -42,13 +42,8 @@ function get_my_drivers_by_categories(){
     $rs[$x] = $wpdb->get_results($query);
     $rs[$x]['category_name'] = $categories[$x]->nombre;
   }
-  //print_r($rs);
-  //die();
   return $rs;
 }
-
-
-get_my_scores_by_drivers_id(3);
 
 function get_my_scores_by_drivers_id($id) {
   global $wpdb;
@@ -60,13 +55,11 @@ function get_my_scores_by_drivers_id($id) {
     $rs = $wpdb->get_results($query);
     $output[$id][$rid] = $rs[0];
   endforeach;
-  echo '<pre>';
-  print_r($output);
-  die();
-  //return $output;
+  //echo '<pre>';
+  //print_r($output);
+  //die();
+  return $output;
 }
-
-// [driver_id][race_id]
 
 function get_my_races() {
   global $wpdb;
@@ -75,6 +68,44 @@ function get_my_races() {
   //print_r($rs);
   //die();
   return $rs;
+}
+
+/* ONLINE /*
+function thumb($url){
+ $url = check_file_name($url);
+ $sectors = explode(".", $url);
+ $ext = $sectors[count($sectors)-1];
+ unset($sectors[count($sectors)-1]);
+ $url_base = implode(".",$sectors);
+ $full_url = $url_base . "-100x100." . $ext;
+ return $full_url;
+}
+
+function medium($url){
+ $url = check_file_name($url);
+ $sectors = explode(".", $url);
+ $ext = $sectors[count($sectors)-1];
+ unset($sectors[count($sectors)-1]);
+ $url_base = implode(".",$sectors);
+ $full_url = $url_base . "-300x300." . $ext;
+ return $full_url;
+}
+
+function check_file_name($url){
+ $sectors = explode(".", $url);
+ $ext = $sectors[count($sectors)-1];
+ $all = explode("/", $url);
+ $file = $all[count($all)-1];
+ unset($all[count($all)-1]);
+ $baseurl = implode("/", $all);
+ $sectors = explode("-", $file);
+  if(count($sectors) > 1) {
+   $newfile = $sectors[0] . "." . $ext;
+   $url = $baseurl . $newfile;
+   return $url;
+ }else{
+   return $url;
+ }
 }
 
 /**
