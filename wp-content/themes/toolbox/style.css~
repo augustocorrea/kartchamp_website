@@ -1,4 +1,4 @@
-/*
+	/*
 Theme Name: Toolbox
 Theme URI: http://wordpress.org/extend/themes/toolbox
 Author: Automattic
@@ -19,13 +19,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
 	background: #282924 url("images/background.jpg") no-repeat center top;
 	color: #ffffff; 
-	font: normal 15px Arial;
+	font: normal 13px Arial;
 	margin: 0px !important;
+}
+
+h1, h2 {
+	font-size: 20px;
 }
 
 #page {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto -15px;
 	width: 960px;
 }
 
@@ -35,13 +39,15 @@ body {
 }
 
 #marquee {
-	
+	padding-bottom: 25px;
 }
+
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
+	/* margin: 0 -240px 0 0; */
+	margin: 0;
 	width: 600px;
-	padding: 15px 25px;
+	padding: 0px 25px 15px 25px;
 	
 }
 #content {
@@ -52,7 +58,7 @@ body {
 	float: right;
 	overflow: hidden;
 	width: 260px;
-	padding: 15px 25px;
+	padding: 0px 25px 15px 25px;
 }
 
 #colophon {
@@ -101,6 +107,36 @@ body {
 	margin: .67em 0;
 }*/
 
+hgroup {
+	margin: 15px 0;
+}
+
+h1#site-title,
+div#top_menu {
+	display: inline-block;
+}
+
+h1#site-title {
+	margin: 0;
+}
+
+div#top_menu {
+	float: right;
+}
+
+div#top_menu ul li {
+	display: inline-block;
+}
+
+div#top_menu ul li a {
+  background: url("images/arrow_menu_gray.png") no-repeat 0 2px transparent;
+  color: #5491D8;
+  font-size: 12px;
+  margin-left: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
 #site-description {
 	font-size: 1em;
 	font-weight: normal;
@@ -137,6 +173,28 @@ body {
 #marquee .caption-wrap {
   background: none !important;
   opacity: 10 !important;
+}
+
+.full-width.home-extract > p {
+  text-align: justify;
+}
+.entry-content p a.btn-more {
+	background: url("images/boton.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 5px;
+	width: 112px;
+	text-decoration: none;
+	color: #656866;
+}
+
+.entry-content p a.btn-more:visited {
+	color: #656866;
+}
+
+.entry-content p a.btn-more:hover {
+	color: #FF392D;
 }
 
 /* =Menu
@@ -375,6 +433,12 @@ menu-menu-container .menu li ul li.first {
   padding: 0 20px 0 0;
 }
 
+.home #content .home-sponsors ul li {
+  display: inline-block;
+  margin: 0 35px;
+}
+
+
 /* =Content
 -------------------------------------------------------------- */
 
@@ -579,12 +643,17 @@ textarea {
 
 .ui-widget-content {
   background: none !important;
+  background-color: #2E2E2E !important;
+  font: normal 11px Arial;
+}
+
+.ui-widget-content ul li a {
   font: normal 11px Arial;
 }
 
 .ui-widget-content div.driver {
   padding: 20px 0;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #999;
 }
 
 .ui-widget-content div.driver:last-child {
@@ -599,6 +668,8 @@ textarea {
 .ui-widget-content div.driver .photo p {
   margin: 0px;
   padding: 0px;
+  width: 100px;
+  text-align: center;
 }
 
 .ui-widget-content div.driver .table {
@@ -608,11 +679,14 @@ textarea {
 
 .ui-widget-content table {
   width: 100%;
+  border: solid 1px #444;
 }
 
-.ui-widget-content table td {
-  padding: 5px;
-} 
+.ui-widget-content table td,
+.ui-widget-content table th {
+  padding: 3px;
+  border: solid 1px #444;
+}
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -637,6 +711,18 @@ article.comment {
 	display: block;
 }
 
+#tabs ul li.ui-corner-top.ui-state-hover {
+  background: none !important;
+  background-color: #4F1D16 !important;
+  border: solid 1px #555 !important;
+}
+
+#tabs ul li.ui-corner-top.ui-state-active {
+  background: none !important;
+  background-color: #DB4F3D !important;
+  border: solid 1px #888 !important;
+}
+
 
 /* =Widgets
 -------------------------------------------------------------- */
@@ -656,7 +742,7 @@ article.comment {
 -------------------------------------------------------------- */
 
 #colophon {
-	padding: 50px 0;
+	padding: 0 0 50px;
 	background-color: #0a0d11;
 	background: #0a0d11 url("images/bkg_footer.jpg") no-repeat center top;
 }
@@ -664,6 +750,49 @@ article.comment {
 #wrapper-footer {
   width: 960px;
   margin: 0px auto;
+}
+
+#wrapper-footer ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 128px;
+}
+
+#wrapper-footer ul.column-e {
+  width: 230px;
+}
+
+#wrapper-footer li.title {
+  border-bottom: 1px solid #3B3E40;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+#wrapper-footer li a {
+  color: #737373;
+  font-size: 13px;
+  line-height: 29px;
+  text-decoration: none;
+}
+
+.column-e li + li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.column-e li + li + li + li {
+  color: #454545;
+  display: block;
+  font-size: 13px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+#wrapper-footer .column-e .airesDesign {
+  text-decoration: none;
+  font-style: italic;
 }
 
 /* LOGO */
@@ -674,6 +803,7 @@ article.comment {
 	overflow: hidden;
 	text-indent: -1000px;
 	background-size: contain;
+	width: 115px;
 }
 
 #site-description {
@@ -682,7 +812,8 @@ article.comment {
 
 /*Contact Form*/
 
-.control-group .control-label {
+.control-group .control-label,
+body.Contacto .control-group .control-label {
 	border: 0;
 	color: #a6a6a6;
 	font-size: 100%;
@@ -690,6 +821,13 @@ article.comment {
 	padding: 0;
 	font-style: italic;
 	vertical-align: baseline;
+}
+
+body.Contacto .control-group .control-label {
+	float: left;
+	padding-top: 5px;
+	text-align: right;
+	width: 275px;
 }
 
 .control-group .controls input {
@@ -731,3 +869,42 @@ article.comment {
 	width: 151px;
 }
 
+.event-list .start-date, .event-list .end-date {
+	background-color: #DB4F3D !important;
+}
+
+.event-day {
+	color: #262827;
+}
+
+.slideshowlink {
+	display: none !important;
+}
+
+/* =Inscripcion
+-------------------------------------------------------------- */
+body.page-id-5 #content,
+body.Contacto #content {
+	background: none repeat scroll 0 0 #2E2E2E;
+	border: 1px solid #555555;
+	line-height: 1.7em;
+	margin-top: 3px;
+	-webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+body.page-id-5 #content h1,
+body.Contacto #content h1,
+body.Contacto #content p {
+	margin-left: 20px;
+	color: #ffffff;
+}
+
+body.page-id-5 .control-group .controls input {
+	width: 277px;
+}
+
+body.page-id-5 .formular .input-append input {
+	width: 250px;
+}

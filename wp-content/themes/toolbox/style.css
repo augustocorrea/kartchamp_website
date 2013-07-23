@@ -39,14 +39,15 @@ h1, h2 {
 }
 
 #marquee {
-	
+	padding-bottom: 20px;
 }
+
 #primary {
 	float: left;
 	/* margin: 0 -240px 0 0; */
 	margin: 0;
 	width: 600px;
-	padding: 15px 25px;
+	padding: 0px 25px 15px 25px;
 	
 }
 #content {
@@ -57,7 +58,7 @@ h1, h2 {
 	float: right;
 	overflow: hidden;
 	width: 260px;
-	padding: 15px 25px;
+	padding: 0px 25px 15px 25px;
 }
 
 #colophon {
@@ -427,9 +428,22 @@ menu-menu-container .menu li ul li.first {
 }
 
 .home .medium-width {
-  width: 280px;
   float: left;
+  height: 250px;
   padding: 0 20px 0 0;
+  width: 280px;
+}
+
+.home .medium-width,
+.home .full-width {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.home .medium-width p a.btn-more {
+	position: absolute;
+	bottom: 0;
+	z-index: 5;
 }
 
 .home #content .home-sponsors ul li {
@@ -642,6 +656,7 @@ textarea {
 
 .ui-widget-content {
   background: none !important;
+  background-color: #2E2E2E !important;
   font: normal 11px Arial;
 }
 
@@ -651,7 +666,7 @@ textarea {
 
 .ui-widget-content div.driver {
   padding: 20px 0;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #999;
 }
 
 .ui-widget-content div.driver:last-child {
@@ -666,6 +681,8 @@ textarea {
 .ui-widget-content div.driver .photo p {
   margin: 0px;
   padding: 0px;
+  width: 100px;
+  text-align: center;
 }
 
 .ui-widget-content div.driver .table {
@@ -675,11 +692,14 @@ textarea {
 
 .ui-widget-content table {
   width: 100%;
+  border: solid 1px #444;
 }
 
-.ui-widget-content table td {
-  padding: 5px;
-} 
+.ui-widget-content table td,
+.ui-widget-content table th {
+  padding: 3px;
+  border: solid 1px #444;
+}
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -702,6 +722,18 @@ article.comment {
 }
 #respond .form-allowed-tags code {
 	display: block;
+}
+
+#tabs ul li.ui-corner-top.ui-state-hover {
+  background: none !important;
+  background-color: #4F1D16 !important;
+  border: solid 1px #555 !important;
+}
+
+#tabs ul li.ui-corner-top.ui-state-active {
+  background: none !important;
+  background-color: #DB4F3D !important;
+  border: solid 1px #888 !important;
 }
 
 
@@ -901,9 +933,12 @@ body.Contacto #content p {
 body.page-id-5 #content,
 body.Contacto #content {
 	background: none repeat scroll 0 0 #2E2E2E;
-	border: 1px solid #808080;
+	border: 1px solid #555555;
 	line-height: 1.7em;
 	margin-top: 3px;
+	-webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 body.page-id-5 #content h1,
