@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Resultados de bú&uacute;squeda para: %s', 'toolbox' ), '<span class="tit_res_busqueda">' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Resultados de b&uacute;squeda para: %s', 'toolbox' ), '<span class="tit_res_busqueda">' . get_search_query() . '</span>' ); ?></h1>
 				</header>
 
 				<?php toolbox_content_nav( 'nav-above' ); ?>
