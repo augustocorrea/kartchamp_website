@@ -437,14 +437,27 @@ menu-menu-container .menu li ul li.first {
 }
 
 .home .medium-width {
-  width: 280px;
   float: left;
   padding: 10px 20px 10px 0;
 }
 
-home-sponsors,
+.home .home-sponsors,
 .home .home-awards {
   padding: 10px 0;
+  height: 250px;
+  width: 280px;
+}
+
+.home .medium-width,
+.home .full-width {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.home .medium-width p a.btn-more {
+	position: absolute;
+	bottom: 0;
+	z-index: 5;
 }
 
 .home #content .home-sponsors ul li {
@@ -831,7 +844,7 @@ article.comment {
 /*Contact Form*/
 
 .control-group .control-label,
-body.Contacto .control-group .control-label {
+body.contacto .control-group .control-label {
 	border: 0;
 	color: #a6a6a6;
 	font-size: 100%;
@@ -841,18 +854,31 @@ body.Contacto .control-group .control-label {
 	vertical-align: baseline;
 }
 
-body.Contacto .control-group .control-label {
+body.contacto .control-group .control-label {
 	float: left;
 	padding-top: 5px;
 	text-align: right;
-	width: 275px;
+	width: 165px;
 }
 
-.control-group .controls input {
+body.contacto .control-group .label-modif {
+	line-height: 15px;
+	padding-top: 0;
+}
+
+.control-group .controls input,
+body.contacto .control-group .controls textarea {
 	background: #ececee;
 	border: 1px solid #dedede;
 	width: 200px;
 }
+
+body.contacto .control-group .controls input,
+body.contacto .control-group .controls textarea {
+	margin-left: 25px;	
+	width: 275px;
+}
+
 .control-group .controls .add-on {
 	background: #ececee;
 	border: 1px solid #dedede;
@@ -872,8 +898,15 @@ body.Contacto .control-group .control-label {
 	padding-top: 0 !important;
 }
 
+body.contacto .control-group .controls .btn {
+	position: relative;
+	left: 188px;
+}
+
 .form-actions .btn.button-primary,
-.form-actions .btn.button-primary:hover{
+body.contacto .control-group .controls .btn,
+.form-actions .btn.button-primary:hover,
+body.contacto .control-group .controls .btn:hover{
 	background: url(images/btn_submit.png) no-repeat;
 	border: none;
 	color: #fff;
@@ -885,6 +918,20 @@ body.Contacto .control-group .control-label {
 	text-shadow:none;
 	text-transform: uppercase;
 	width: 151px;
+	overflow: hidden;
+}
+
+body.contacto #mapa_kartchamp {
+	margin: 0 auto 10px;
+}
+
+body.contacto #mapa_kartchamp .flxmap-marker-title,
+body.contacto #mapa_kartchamp .flxmap-directions-link a {
+	color: #2E2E2E;
+}
+
+body.contacto .control-group.error .help-inline {
+	padding-left: 190px;
 }
 
 .event-list .start-date, .event-list .end-date {
@@ -899,10 +946,15 @@ body.Contacto .control-group .control-label {
 	display: none !important;
 }
 
+body.contacto #content p {
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
 /* =Inscripcion
 -------------------------------------------------------------- */
-body.page-id-5 #content,
-body.Contacto #content {
+body.inscripcion #content,
+body.contacto #content {
 	background: none repeat scroll 0 0 #2E2E2E;
 	border: 1px solid #555555;
 	line-height: 1.7em;
@@ -912,17 +964,21 @@ body.Contacto #content {
   border-radius: 6px;
 }
 
-body.page-id-5 #content h1,
-body.Contacto #content h1,
-body.Contacto #content p {
+body.inscripcion #content h1,
+body.contacto #content h1,
+body.contacto #content p {
 	margin-left: 20px;
 	color: #ffffff;
 }
 
-body.page-id-5 .control-group .controls input {
+body.contacto #content p {
+	margin-right: 20px;
+}
+
+body.inscripcion .control-group .controls input {
 	width: 277px;
 }
 
-body.page-id-5 .formular .input-append input {
+body.inscripcion .formular .input-append input {
 	width: 250px;
 }

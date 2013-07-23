@@ -9,7 +9,7 @@
   <!--email address -->
   <div class="control-group<?php 
     if (isset($contact->Errors['email'])) echo ' error'; ?>">
-     <label class="control-label" for="cscf_email"><?php _e('Email Address:','cleanandsimple');?></label>
+     <label class="control-label label-modif" for="cscf_email"><?php _e('Email Address:','cleanandsimple');?></label>
      <div class="controls">
        <input class="input-xlarge {email:true, required:true, messages:{required:'<?php _e('Please give your email address.','cleanandsimple');?>',email:'<?php _e('Please enter a valid email address.','cleanandsimple');?>'}}" type="text" id="cscf_email" name="cscf[email]" value="<?php echo $contact->Email; ?>" placeholder="<?php _e('Your Email Address','cleanandsimple');?>">
        <span class="help-inline"><?php if (isset($contact->Errors['email'])) echo $contact->Errors['email']; ?></span>
@@ -19,7 +19,7 @@
  <!--confirm email address -->
   <div class="control-group<?php 
     if (isset($contact->Errors['confirm-email'])) echo ' error'; ?>">
-     <label class="control-label" for="cscf_confirm-email"><?php _e('Confirm Email Address:','cleanandsimple');?></label>
+     <label class="control-label label-modif" for="cscf_confirm-email"><?php _e('Confirm Email Address:','cleanandsimple');?></label>
      <div class="controls">
        <input class="input-xlarge {email:true, required:true, equalTo:'#cscf_email', messages:{equalTo:'<?php _e('Please enter the same email address again.','cleanandsimple');?>',required:'<?php _e('Please enter the same email address again.','cleanandsimple');?>',email:'<?php _e('Please enter a valid email address.','cleanandsimple');?>'}}" type="text" id="cscf_confirm-email" name="cscf[confirm-email]" value="<?php echo $contact->ConfirmEmail; ?>" placeholder="<?php _e('Confirm Your Email Address','cleanandsimple');?>">
        <span class="help-inline"><?php if (isset($contact->Errors['confirm-email'])) echo $contact->Errors['confirm-email']; ?></span>

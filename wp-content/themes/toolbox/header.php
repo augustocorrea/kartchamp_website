@@ -30,6 +30,8 @@
 	global $page, $paged, $nom_pagina;
 
 	$nom_pagina=get_the_title();
+	$nom_pagina=strtolower($nom_pagina);
+	$nom_pagina=reemplazar_tildes($nom_pagina);
 	
 	wp_title( '|', true, 'right' );
 
