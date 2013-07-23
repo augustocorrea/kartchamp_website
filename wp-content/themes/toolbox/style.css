@@ -49,6 +49,9 @@ ul li.title {
 
 #marquee {
 	padding-bottom: 20px;
+	-webkit-box-shadow: 0px 6px 30px rgba(50, 50, 50, 1);
+  -moz-box-shadow:    0px 6px 30px rgba(50, 50, 50, 1);
+  box-shadow:         0px 6px 30px rgba(50, 50, 50, 1);
 }
 
 #primary {
@@ -180,8 +183,8 @@ div#top_menu ul li a {
 }
 
 #marquee .caption-wrap {
-  background: none !important;
-  opacity: 10 !important;
+  padding-top: 24px;
+  margin: 0 1px 1px 1px !important;
 }
 
 .full-width.home-extract > p {
@@ -810,7 +813,7 @@ article.comment {
 }
 
 #wrapper-footer ul.column-e {
-  width: 230px;
+  width: 190px;
 }
 
 #wrapper-footer li.title {
