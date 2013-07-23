@@ -428,9 +428,22 @@ menu-menu-container .menu li ul li.first {
 }
 
 .home .medium-width {
-  width: 280px;
   float: left;
+  height: 250px;
   padding: 0 20px 0 0;
+  width: 280px;
+}
+
+.home .medium-width,
+.home .full-width {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.home .medium-width p a.btn-more {
+	position: absolute;
+	bottom: 0;
+	z-index: 5;
 }
 
 .home #content .home-sponsors ul li {
