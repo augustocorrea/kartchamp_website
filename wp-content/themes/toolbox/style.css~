@@ -439,13 +439,13 @@ menu-menu-container .menu li ul li.first {
 .home .medium-width {
   float: left;
   padding: 10px 20px 10px 0;
+  width: 280px;
+  height: 240px;
 }
 
 .home .home-sponsors,
 .home .home-awards {
   padding: 10px 0;
-  height: 250px;
-  width: 280px;
 }
 
 .home .medium-width,
