@@ -903,12 +903,16 @@ body.Contacto .control-group .controls .btn:hover{
 }
 
 body.Contacto #mapa_kartchamp {
-	margin: 0 auto;
+	margin: 0 auto 10px;
 }
 
 body.Contacto #mapa_kartchamp .flxmap-marker-title,
 body.Contacto #mapa_kartchamp .flxmap-directions-link a {
 	color: #2E2E2E;
+}
+
+body.Contacto .control-group.error .help-inline {
+	padding-left: 20px;
 }
 
 .event-list .start-date, .event-list .end-date {

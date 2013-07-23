@@ -25,25 +25,25 @@ msgstr "Lo sentimos las direcciones de correo electrónico no coinciden."
 #: class.cff_contact.php:59 views/contact-form-with-recaptcha.view.php:29
 #: views/contact-form.view.php:14
 msgid "Please give your email address."
-msgstr "Porfavor ingresa tu correo electrónico"
+msgstr "Por favor ingresa tu correo electrónico"
 
 #: class.cff_contact.php:63
 msgid "Please confirm your email address."
-msgstr "Porfavor confirma tu correo electrónico."
+msgstr "Por favor confirma tu correo electrónico."
 
 #: class.cff_contact.php:67 views/contact-form-with-recaptcha.view.php:49
 #: views/contact-form.view.php:34
 msgid "Please give your name."
-msgstr "Porfavor ingresa tu nombre."
+msgstr "Por favor ingresa tu nombre."
 
 #: class.cff_contact.php:71
 msgid "Please enter a message."
-msgstr "Porfavor ingresa un mensaje."
+msgstr "Por favor ingresa un mensaje."
 
 #: class.cff_contact.php:75 views/contact-form-with-recaptcha.view.php:29
 #: views/contact-form.view.php:14
 msgid "Please enter a valid email address."
-msgstr "Porfavor ingresa una direccion de correo electrónico valida."
+msgstr "Por favor ingresa una direccion de correo electrónico valida."
 
 #: class.cff_contact.php:83
 msgid "Sorry the code wasn't entered correctly please try again."
