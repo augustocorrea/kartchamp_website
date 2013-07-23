@@ -70,7 +70,7 @@
 			<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'toolbox' ); ?></h1>
 			<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'toolbox' ); ?>"><?php _e( 'Skip to content', 'toolbox' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array('menu' => 'menu' )); ?>
 			
   		<form role="search" method="get" id="searchform" action="http://localhost/kartchamp_website/">
       	<div><label class="screen-reader-text" for="s">Buscar por:</label>
