@@ -27,8 +27,10 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	global $page, $paged;
+	global $page, $paged, $nom_pagina;
 
+	$nom_pagina=get_the_title();
+	
 	wp_title( '|', true, 'right' );
 
 	// Add the blog name.
@@ -57,7 +59,7 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($nom_pagina); ?>>
 <div id="page" class="hfeed">
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
