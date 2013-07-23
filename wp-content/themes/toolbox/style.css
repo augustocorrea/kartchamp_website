@@ -106,6 +106,36 @@ h1, h2 {
 	margin: .67em 0;
 }*/
 
+hgroup {
+	margin: 15px 0;
+}
+
+h1#site-title,
+div#top_menu {
+	display: inline-block;
+}
+
+h1#site-title {
+	margin: 0;
+}
+
+div#top_menu {
+	float: right;
+}
+
+div#top_menu ul li {
+	display: inline-block;
+}
+
+div#top_menu ul li a {
+  background: url("images/arrow_menu_gray.png") no-repeat 0 2px transparent;
+  color: #5491D8;
+  font-size: 12px;
+  margin-left: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
 #site-description {
 	font-size: 1em;
 	font-weight: normal;
@@ -748,6 +778,7 @@ article.comment {
 	overflow: hidden;
 	text-indent: -1000px;
 	background-size: contain;
+	width: 115px;
 }
 
 #site-description {
