@@ -390,6 +390,16 @@ function toolbox_enhanced_image_navigation( $url ) {
 }
 add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 
+/*Funcion para quitar tildes*/
+
+function reemplazar_tildes($string)
+{
+	$no_permitidas=array("á", "é", "í", "ó", "ú", "Á", "É", "Í", "Ó", "Ú");
+	$permitidas=array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
+	$texto=str_replace($no_permitidas, $permitidas, $string);
+
+	return $texto;
+}
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.
