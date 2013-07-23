@@ -65,9 +65,9 @@ get_header(); ?>
                       <?php foreach($scores[$r+1][$c+1] as $value): ?>
                       <tr>
                         <td><?php echo get_pilot_by_id($value->piloto_id ); ?></td>
-                        <td><?php echo "Puesto: ".$value->clasificacion_puesto . "<br />Marca: " . $value->clasificacion_marca; ?></td>
-                        <td><?php echo "Puesto: ".$value->serie_puesto . "<br />Marca: " . $value->serie_marca; ?></td>
-                        <td><?php echo "Puesto: ".$value->final_puesto . "<br />Marca: " . $value->final_marca; ?></td>
+                        <td><?php echo "Puesto: ".$value->clasificacion_marca . "<br />Tiempo: " . $value->clasificacion_puesto; ?></td>
+                        <td><?php echo "Puesto: ".$value->serie_marca . "<br />Tiempo: " . $value->serie_puesto; ?></td>
+                        <td><?php echo "Puesto: ".$value->final_marca . "<br />Tiempo: " . $value->final_puesto; ?></td>
                       </tr>
                       <?php endforeach; ?>
                       <?php endif; ?>

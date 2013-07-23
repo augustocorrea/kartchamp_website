@@ -601,6 +601,10 @@ menu-menu-container .menu li ul li.first {
 	margin: 0 1em 0 0;
 }
 
+.ngg-gallery-thumbnail img {
+  background-color: #efefef !important;
+}
+
 /* Image Posts */
 .format-image .entry-header {
 	display: none;

@@ -183,7 +183,7 @@ div#top_menu ul li a {
 }
 
 #marquee .caption-wrap {
-  padding-top: 20px;
+  padding-top: 24px;
   margin: 0 1px 1px 1px !important;
 }
 
