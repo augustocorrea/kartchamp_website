@@ -27,8 +27,10 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	global $page, $paged;
+	global $page, $paged, $nom_pagina;
 
+	$nom_pagina=get_the_title();
+	
 	wp_title( '|', true, 'right' );
 
 	// Add the blog name.
@@ -57,20 +59,23 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($nom_pagina); ?>>
 <div id="page" class="hfeed">
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
 		<hgroup>
 			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<div id="top_menu">
+				<?php wp_nav_menu( array('menu' => 'top menu' )); ?>
+			</div>
 		</hgroup>
 
 		<nav id="access" role="navigation">
 			<h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'toolbox' ); ?></h1>
 			<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'toolbox' ); ?>"><?php _e( 'Skip to content', 'toolbox' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array('menu' => 'menu' )); ?>
 			
   		<form role="search" method="get" id="searchform" action="http://localhost/kartchamp_website/">
       	<div><label class="screen-reader-text" for="s">Buscar por:</label>
