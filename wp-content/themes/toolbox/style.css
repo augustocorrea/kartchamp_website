@@ -36,6 +36,10 @@ ul li.title {
 	color: #eee;
 }
 
+a {
+  color: #eee;
+}
+
 #page {
 	display: block;
 	margin: 0 auto -15px;

@@ -36,6 +36,10 @@ ul li.title {
 	color: #eee;
 }
 
+a {
+  color: #aaa;
+}
+
 #page {
 	display: block;
 	margin: 0 auto -15px;
@@ -599,6 +603,10 @@ menu-menu-container .menu li ul li.first {
 .format-gallery .gallery-thumb {
 	float: left;
 	margin: 0 1em 0 0;
+}
+
+.ngg-gallery-thumbnail img {
+  background-color: #efefef !important;
 }
 
 /* Image Posts */
