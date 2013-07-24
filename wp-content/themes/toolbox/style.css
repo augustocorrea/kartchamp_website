@@ -397,10 +397,6 @@ ol, ul {
 	background: none repeat scroll 0 0 transparent;
 }
 
-.menu-menu-container #menu-menu li.current-menu-item .sub-menu a {
-	color: #999999;
-}
-
 .menu-item-16 a {
 	background: url("images/menu_blue.gif") 0 0 repeat-x;
 }
@@ -422,14 +418,21 @@ ol, ul {
 .menu-item-31 a {
 	background: url("images/menu_yellow.gif") 0 0 repeat-x;
 }
-.menu-item-31 a:hover, .current-menu-item.menu-item-31 a, .current-menu-ancestor.menu-item-31 a {
+.menu-item-31 a:hover, .current-menu-item.menu-item-31 a, .current-menu-ancestor.menu-item-31 a, a.hover-yellow {
 	background: url("images/menu_yellow_a.png") center 0 no-repeat;
+}
+.menu-menu-container #menu-menu li a.hover-yellow {
+	color: #000000;
 }
 .menu-item-27 a {
 	background: url("images/menu_green.gif") 0 0 repeat-x;
 }
 .menu-item-27 a:hover, .current-menu-item.menu-item-27 a, .current-menu-ancestor.menu-item-27 a {
 	background: url("images/menu_green_a.png") center 0 no-repeat;
+}
+
+.menu-menu-container #menu-menu li .sub-menu a {
+	color: #999999;
 }
 
 /* END - MENU RODRIGO  */

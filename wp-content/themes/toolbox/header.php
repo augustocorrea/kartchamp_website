@@ -59,6 +59,7 @@
 <?php wp_head(); ?>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/dark-hive/jquery-ui.css" />
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/documentReady.js" type="text/javascript"></script>
 </head>
 
 <body <?php body_class($nom_pagina); ?>>
