@@ -26,7 +26,7 @@ function get_pilot_by_id($id) {
   global $wpdb;
   $query = "SELECT nombre_apellido FROM app_piloto WHERE id = '$id'";
   $rs = $wpdb->get_results($query);
-  return $rs[0];
+  return $rs[0]->nombre_apellido;
 }
 
 function get_my_categories() {
@@ -437,6 +437,16 @@ function toolbox_enhanced_image_navigation( $url ) {
 }
 add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
 
+/*Funcion para quitar tildes*/
+
+function reemplazar_tildes($string)
+{
+	$no_permitidas=array("á", "é", "í", "ó", "ú", "Á", "É", "Í", "Ó", "Ú");
+	$permitidas=array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
+	$texto=str_replace($no_permitidas, $permitidas, $string);
+
+	return $texto;
+}
 
 /**
  * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.

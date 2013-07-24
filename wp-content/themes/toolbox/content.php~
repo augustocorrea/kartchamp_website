@@ -57,7 +57,7 @@
 		<?php endif; ?>
 		<?php edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
 		
-		<div class="fb-comments" style="margin-top: 30px;">
+		<div class="fb-comments" style="margin-top: 40px;">
 		  <div class="fb-comments" data-href="http://www.kartchamp.com.ar/category/novedades/" data-width="600" data-num-posts="50" data-colorscheme="dark"></div>
 		</div>
 		
