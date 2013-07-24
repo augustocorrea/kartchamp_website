@@ -147,6 +147,7 @@ div#top_menu {
 
 .addthis_toolbox.addthis_default_style {
  	display: inline-block;
+ 	float: left;
 }
 
 .menu-top-menu-container {
