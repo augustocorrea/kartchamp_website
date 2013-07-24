@@ -354,6 +354,9 @@ ol, ul {
 	padding: 30px 33px 20px;
 	text-decoration: none;
 }
+.menu-menu-container #menu-menu li.current-menu-item a {
+	color: #000000;
+}
 .menu-menu-container #menu-menu li ul li a, .menu-menu-container #menu-menu li ul li.last ul li a {
 	background: url("images/dropdown_1_line.png") no-repeat scroll 0 bottom transparent;
 	color: #999999;
