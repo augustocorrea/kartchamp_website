@@ -397,6 +397,10 @@ ol, ul {
 	background: none repeat scroll 0 0 transparent;
 }
 
+.menu-menu-container #menu-menu li.current-menu-item .sub-menu a {
+	color: #999999;
+}
+
 .menu-item-16 a {
 	background: url("images/menu_blue.gif") 0 0 repeat-x;
 }
