@@ -275,22 +275,25 @@ div#top_menu ul li a {
 	z-index: 2;
 }
 
-.menu-menu-container .menu li a:hover, .menu-menu-container .menu .current-menu-item a, .menu-menu-container .menu .current-menu-item li a:hover, .menu-menu-container .menu .current-menu-item .current_page_item a, .menu-menu-container .menu .current-menu-ancestor a, .menu-menu-container .menu .current-menu-ancestor a:hover, .menu-menu-container .menu li li.current-menu-ancestor a, .menu-menu-container .menu li .current-menu-ancestor .current-menu-item a {
+.menu-menu-container #menu-menu li a,
+.menu-menu-container #menu-menu li a:hover, 
+{
 	color: #000000;
 }
 
+.menu-menu-container #menu-menu li ul li a:hover {
+	color: #FFFFFF !important;
+}
 :focus {
 	outline: 0 none;
 }
-
 ol, ul {
 	list-style: none outside none;
 }
-
-.menu-menu-container .menu {
+.menu-menu-container #menu-menu {
 	color: #FFFFFF;
 	float: left;
-	font-family: 'edelsansRegular',Arial,Helvetica,sans-serif;
+	font-family: 'edelsansRegular', Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 1.1em;
 	margin: 0;
@@ -299,92 +302,107 @@ ol, ul {
 	width: 100%;
 	z-index: 1300;
 }
-
+.menu-menu-container #menu-menu li ul {
+	display: none;
+	font-weight: bold;
+	left: -14px !important;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-transform: none;
+	top: 68px;
+	width: 140px;
+	z-index: 1308;
+}
 .menu-menu-container ul li {
 	background: url("images/topmenu_line.gif") no-repeat scroll right 5px transparent;
 	display: block;
 	float: left;
-	height: 70px;
+	height: 55px;
 	list-style: none outside none;
 	margin: 0;
 	position: relative;
 }
-
-.menu-menu-container .menu li a {
+.menu-menu-container #menu-menu li a {
 	color: #FFFFFF;
 	display: block;
 	height: 20px;
 	padding: 30px 33px 20px;
 	text-decoration: none;
 }
-
-.menu-menu-container .menu li a:hover {
-	cursor: pointer;
-}
-
-.menu-menu-container .menu li ul li {
-	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
-	clear: both;
+.menu-menu-container #menu-menu li ul li a, .menu-menu-container #menu-menu li ul li.last ul li a {
+	background: url("images/dropdown_1_line.png") no-repeat scroll 0 bottom transparent;
+	color: #999999;
 	display: block;
 	height: auto;
+	padding: 10px 10px 10px 14px;
+}
+.menu-menu-container #menu-menu li a:hover {
+	cursor: pointer;
+	color: #000000;
+}
+
+.menu-menu-container #menu-menu li:hover ul li ul {
+	display: none;
+}
+.menu-menu-container #menu-menu li:hover ul, .menu-menu-container #menu-menu li:hover ul li:hover ul {
+	display: block;
+}
+.menu-menu-container #menu-menu li ul li {
+	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
+	clear: both;
 	line-height: 1.4em;
-	margin: 0;
-	position: relative;
 	width: 140px;
 }
-.
-menu-menu-container .menu li ul li.first {
+.menu-menu-container #menu-menu li ul li.menu-item-103 {
 	background: url("images/dropdown_1_first.png") no-repeat scroll 0 top transparent;
 	padding-top: 10px;
 }
-
-.menu-menu-container .menu .menu-item-16 a, .menu-menu-container .menu .menu-item-16 a:hover, .menu-menu-container .menu .current-menu-ancestor .current-menu-item a, .menu-menu-container .menu .current-menu-ancestor li .current-menu-item a {
-	color: #FFFFFF;
+.menu-menu-container #menu-menu li ul li ul li.menu-item-103 {
+	background: url("images/dropdown_1_first2.png") no-repeat scroll 0 top transparent;
+	padding-top: 3px;
 }
-
-
+.menu-menu-container #menu-menu li ul li.menu-item-101 {
+	background: url("images/dropdown_1_last.png") no-repeat scroll 0 bottom transparent;
+	padding-bottom: 8px;
+}
+.menu-menu-container #menu-menu li ul li.menu-item-101 a, .menu-menu-container #menu-menu li ul li ul li.menu-item-101 a {
+	background: none repeat scroll 0 0 transparent;
+}
 
 .menu-item-16 a {
 	background: url("images/menu_blue.gif") 0 0 repeat-x;
 }
-
 .menu-item-16 a:hover, .current-menu-item.menu-item-16 a, .current-menu-ancestor.menu-item-16 a {
 	background: url("images/menu_blue_a.png") center 0 no-repeat;
 }
-
 .menu-item-14 a {
 	background: url("images/menu_red.gif") 0 0 repeat-x;
 }
-
 .menu-item-14 a:hover, .current-menu-item.menu-item-14 a, .current-menu-ancestor.menu-item-14 a {
 	background: url("images/menu_red_a.png") center 0 no-repeat;
 }
-
 .menu-item-28 a {
 	background: url("images/menu_orange.gif") 0 0 repeat-x;
 }
-
 .menu-item-28 a:hover, .current-menu-item.menu-item-28 a, .current-menu-ancestor.menu-item-28 a {
 	background: url("images/menu_orange_a.png") center 0 no-repeat;
 }
-
 .menu-item-31 a {
 	background: url("images/menu_yellow.gif") 0 0 repeat-x;
 }
-
 .menu-item-31 a:hover, .current-menu-item.menu-item-31 a, .current-menu-ancestor.menu-item-31 a {
 	background: url("images/menu_yellow_a.png") center 0 no-repeat;
 }
-
 .menu-item-27 a {
 	background: url("images/menu_green.gif") 0 0 repeat-x;
 }
-
 .menu-item-27 a:hover, .current-menu-item.menu-item-27 a, .current-menu-ancestor.menu-item-27 a {
 	background: url("images/menu_green_a.png") center 0 no-repeat;
 }
 
 /* END - MENU RODRIGO  */
+
 
 
 /* top search */
