@@ -663,6 +663,19 @@ ol, ul {
 	padding-top: 0;
 }
 
+/* TORNEO */
+
+body.page-template-template-race-php #selector-of-filter li.ui-state-default.ui-corner-top,
+body.page-template-template-race-by-race-php #selector-of-filter li.ui-state-default.ui-corner-top.right-option {
+	background: #DB4F3D;
+	border: 1px solid #888888;
+}
+
+body.page-template-template-race-php #selector-of-filter li.ui-state-default.ui-corner-top.right-option {
+	background: url("images/ui-bg_highlight-soft_35_222222_1x100.png") repeat-x scroll 50% 50% #222222;
+	border: 1px solid #444444;
+}
+
 
 /* =Images
 -------------------------------------------------------------- */
