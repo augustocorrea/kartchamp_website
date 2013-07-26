@@ -1026,6 +1026,17 @@ body.contacto .control-group.error .help-inline {
 	background-color: #DB4F3D !important;
 }
 
+.event-details {
+	font-size: 1em !important;
+}
+
+.event-time {
+	font-weight: bold !important;
+	top: 125px !important;
+	float: right !important;
+	padding-right: 75px !important;
+}
+
 .event-day {
 	color: #262827;
 }
