@@ -544,7 +544,7 @@ ol, ul {
 }
 
 .home #content .home-sponsors ul li img {
-  border: solid 1px #333;
+  border: solid 1px #000;
 }
 
 /* =Content
