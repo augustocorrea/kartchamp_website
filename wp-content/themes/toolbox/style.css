@@ -797,6 +797,7 @@ textarea {
 
 .ui-widget-content div.driver .photo img {
   width: 70px;
+  border: solid 1px #777;
 }
 
 .ui-widget-content div.driver .photo p {
