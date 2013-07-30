@@ -25,8 +25,9 @@ get_header(); ?>
         
         <div id="selector-of-filter">
           <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-top">
-            <li class="ui-state-default ui-corner-top"><a href="torneo" title="Resultados por corredor">Resultados por corredor</a></li>
+            <li class="ui-state-default active-option ui-corner-top"><a href="torneo" title="Resultados por corredor">Resultados por corredor</a></li>
             <li class="ui-state-default ui-corner-top right-option"><a href="resultados-de-los-torneos-por-carrera" title="Resultados por carrera">Resultados por carrera</a></li>
+            <li class="ui-state-default ui-corner-top campeonato-option"><a href="campeonato" title="Campeonato">Campeonato</a></li>
           </ul>
         </div>
         

@@ -22,9 +22,55 @@
  * @since Toolbox 0.1
  */
 
+function pending_for_alert() {
+  global $wpdb;
+  $query = "SELECT * FROM app_piloto WHERE aviso IS NULL";
+  $rs = $wpdb->get_results($query);
+  return $rs;
+}
+
+function send_alert($pendings) {
+  //echo "<pre>";  
+  //print_r($pendings);
+  foreach($pendings as $value):
+    $content = "
+    Desde el sitio web se ha inscripto el siguiente piloto:
+    
+    Nombre y apellido: $value->nombre_apellido
+    Peso: $value->peso
+    Email: $value->email
+    Teléfono: $value->telefono
+    Estado: Pendiente
+    
+    Su estado es -Pendiente-, y hasta que su estado no sea modificado desde DB-Toolkit > Pilotos (View) > Edit > Estado, al estado -Inscripto-, este piloto no aparecerá en el sistema.
+    ";
+    $subject = "Nuevo inscripto a KartChamp";
+  	$content = utf8_decode($content);
+  	$to = "info@kartchamp.com.ar";
+  	$email = 'no-reply@kartchamp.com.ar';
+    mail($to,$subject,$content,"From: KartChamo <no-reply@kartchamp.com.ar>\n" 
+  	    			      ."Reply-To: $email\r\n"
+  			            ."X-Mailer: PHP/" . phpversion());
+  	change_status($value->id);
+	endforeach;
+	
+}
+
+function change_status($id) {
+  global $wpdb;
+  $new_data = array("aviso" => "1");
+  $wpdb->update(
+    'app_piloto', // Table
+    $new_data, // Array of key(col) => val(value to update to)
+    array(
+      'id' => $id
+    ) // Where
+  );
+}
+
 function get_pilot_by_id($id) {
   global $wpdb;
-  $query = "SELECT nombre_apellido FROM app_piloto WHERE id = '$id'";
+  $query = "SELECT nombre_apellido FROM app_piloto WHERE id = '$id' AND estado = 'Inscripto'";
   $rs = $wpdb->get_results($query);
   return $rs[0]->nombre_apellido;
 }
@@ -44,7 +90,7 @@ function get_pilot_category($pilot_id) {
   //print_r($categories);
   //$rs = array();
   global $wpdb;
-  $query = "SELECT id,nombre_apellido,foto,peso FROM app_piloto WHERE id = '$pilot_id'";
+  $query = "SELECT id,nombre_apellido,foto,peso FROM app_piloto WHERE id = '$pilot_id' AND estado = 'Inscripto'";
   $pilot = $wpdb->get_results($query);
   for($x=0 ; $x<count($categories) ; $x++) {
     $min = $categories[$x]->minimo;
@@ -85,7 +131,7 @@ function get_my_drivers_by_categories(){
   for($x=0 ; $x<count($categories) ; $x++) {
     $min = $categories[$x]->minimo;
     $max = $categories[$x]->maximo;
-    $query = "SELECT id,nombre_apellido,foto,peso FROM app_piloto WHERE peso > '$min' AND peso < '$max'";
+    $query = "SELECT * FROM app_piloto WHERE estado = 'Inscripto' AND peso > '$min' AND peso < '$max'";
     $rs[$x] = $wpdb->get_results($query);
     $rs[$x]['category_name'] = $categories[$x]->nombre;
   }
@@ -98,7 +144,7 @@ function get_my_scores_by_drivers_id($id) {
   $races = get_my_races();
   foreach($races as $value):
     $rid = $value->id;
-    $query = "SELECT * FROM app_tiempo WHERE piloto_id = '$id' AND carrera_id = '$rid'";
+    $query = "SELECT * FROM app_tiempo WHERE estado = 'Inscripto' AND piloto_id = '$id' AND carrera_id = '$rid'";
     $rs = $wpdb->get_results($query);
     $output[$id][$rid] = $rs[0];
   endforeach;

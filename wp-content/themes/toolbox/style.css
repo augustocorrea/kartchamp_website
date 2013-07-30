@@ -501,6 +501,9 @@ ol, ul {
   left: 22px;
 }
 
+#selector-of-filter ul li.campeonato-option a {
+  left: 50px;
+}
 
 .home .home-sponsors ul li img {
   max-width: 130px;
@@ -671,16 +674,15 @@ ol, ul {
 
 /* TORNEO */
 
-body.page-template-template-race-php #selector-of-filter li.ui-state-default.ui-corner-top,
-body.page-template-template-race-by-race-php #selector-of-filter li.ui-state-default.ui-corner-top.right-option {
-	background: #DB4F3D;
-	border: 1px solid #888888;
+#selector-of-filter ul li.active-option {
+	background: #DB4F3D !important;
+	border: 1px solid #888888 !important;
 }
-
+/*
 body.page-template-template-race-php #selector-of-filter li.ui-state-default.ui-corner-top.right-option {
 	background: url("images/ui-bg_highlight-soft_35_222222_1x100.png") repeat-x scroll 50% 50% #222222;
 	border: 1px solid #444444;
-}
+}*/
 
 
 /* =Images
@@ -805,6 +807,7 @@ textarea {
 .ui-widget-content table th {
   padding: 3px;
   border: solid 1px #444;
+  text-align: center;
 }
 
 /* =Comments
