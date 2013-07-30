@@ -192,7 +192,9 @@ function check_file_name($url){
  unset($all[count($all)-1]);
  $baseurl = implode("/", $all) . "/";
  $sectors = explode("-", $file);
+ //print_r($sectors);
   if(count($sectors) > 1) {
+   //$newfile = $sectors[0] . "." . $ext;
    $newfile = "";
    foreach($sectors as $value):
      $newfile .= $value . "-";
