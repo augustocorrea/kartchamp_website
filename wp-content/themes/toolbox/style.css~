@@ -544,7 +544,7 @@ ol, ul {
 }
 
 .home #content .home-sponsors ul li img {
-  border: solid 1px #000;
+  border: solid 1px #333;
 }
 
 /* =Content
@@ -797,6 +797,7 @@ textarea {
 
 .ui-widget-content div.driver .photo img {
   width: 70px;
+  border: solid 1px #aaa;
 }
 
 .ui-widget-content div.driver .photo p {
@@ -932,13 +933,13 @@ article.comment {
 
 /* LOGO */
 #site-title a {
-	background: url("images/logo_kartchamp.png") no-repeat scroll 0 0 transparent;
+	background: url("images/logo_kartchamp_oscuro.png") no-repeat scroll 0 0 transparent;
 	display: block;
 	height: 62px;
 	overflow: hidden;
 	text-indent: -1000px;
 	background-size: contain;
-	width: 244px;
+	width: 243px;
 }
 
 #site-description {
