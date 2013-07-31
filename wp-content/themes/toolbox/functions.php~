@@ -163,8 +163,32 @@ function get_my_races() {
   return $rs;
 }
 
-/* ONLINE */
 function thumb($url){
+  $file = check_my_filename($url);
+  $baseurl = check_my_baseurl($url);
+  $file = replace_my_file($file, '-100x100.');
+  return $baseurl . $file;
+}
+
+function replace_my_file($file, $mode){
+  return str_replace( '.', $mode, $file);
+}
+
+function check_my_filename($url){
+ $all = explode("/", $url);
+ $file = $all[count($all)-1];
+ return $file;
+}
+
+function check_my_baseurl($url){
+ $all = explode("/", $url);
+ unset($all[count($all)-1]);
+ $baseurl = implode("/", $all) . "/";
+ return $baseurl;
+}
+
+/* ONLINE */
+/*function thumb($url){
  $url = check_file_name($url);
  $sectors = explode(".", $url);
  $ext = $sectors[count($sectors)-1];
@@ -172,9 +196,9 @@ function thumb($url){
  $url_base = implode(".",$sectors);
  $full_url = $url_base . "-100x100." . $ext;
  return  crop_last($full_url);
-}
+}*/
 
-function medium($url){
+/*function medium($url){
  $url = check_file_name($url);
  $sectors = explode(".", $url);
  $ext = $sectors[count($sectors)-1];
@@ -182,9 +206,9 @@ function medium($url){
  $url_base = implode(".",$sectors);
  $full_url = $url_base . "-300x300." . $ext;
  return  crop_last($full_url);
-}
+}*/
 
-function check_file_name($url){
+/*function check_file_name($url){
  $sectors = explode(".", $url);
  $ext = $sectors[count($sectors)-1];
  $all = explode("/", $url);
@@ -192,9 +216,7 @@ function check_file_name($url){
  unset($all[count($all)-1]);
  $baseurl = implode("/", $all) . "/";
  $sectors = explode("-", $file);
- //print_r($sectors);
   if(count($sectors) > 1) {
-   //$newfile = $sectors[0] . "." . $ext;
    $newfile = "";
    foreach($sectors as $value):
      $newfile .= $value . "-";
@@ -204,13 +226,12 @@ function check_file_name($url){
  }else{
    return $url;
  }
-}
+}*/
 
-function crop_last($string) {
+/*function crop_last($string) {
   $string = substr ($string, 0, strlen($string) - 1);
   return $string;
-}
-
+}*/
 
 /**
  * Set the content width based on the theme's design and stylesheet.
