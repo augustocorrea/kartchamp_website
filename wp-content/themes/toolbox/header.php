@@ -71,10 +71,10 @@
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<div id="top_menu">
 				<div class="addthis_toolbox addthis_default_style">
-					<a href="https://www.facebook.com/kart.champ" class="button_facebook" title="Facebook"></a>
-					<a href="https://twitter.com/@kartchamps" class="button_twitter" title="Twitter"></a>
-					<!--<a href="mailto:" class="button_email" title="Email"></a>-->
-					<a href="#" onClick="window.print();return false" class="button_print" title="Imprimir"></a>
+					<a href="https://www.facebook.com/kart.champ" class="button_facebook" title="Facebook" target="_blank"></a>
+					<a href="https://twitter.com/@kartchamps" class="button_twitter" title="Twitter" target="_blank"></a>
+					<!--<a href="mailto:" class="button_email" title="Email" target="_blank"></a>-->
+					<a href="#" onClick="window.print();return false" class="button_print" title="Imprimir" target="_blank"></a>
 				</div>
 				<?php /*echo wp_socializer(addthis, array(
 						'type' => toolbar,
