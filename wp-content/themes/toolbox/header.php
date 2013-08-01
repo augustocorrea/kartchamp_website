@@ -70,11 +70,17 @@
 			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<div id="top_menu">
-				<?php echo wp_socializer(addthis, array(
+				<div class="addthis_toolbox addthis_default_style">
+					<a href="https://www.facebook.com/kart.champ" class="button_facebook" title="Facebook"></a>
+					<a href="https://twitter.com/@kartchamps" class="button_twitter" title="Twitter"></a>
+					<!--<a href="mailto:" class="button_email" title="Email"></a>-->
+					<a href="#" onClick="window.print();return false" class="button_print" title="Imprimir"></a>
+				</div>
+				<?php /*echo wp_socializer(addthis, array(
 						'type' => toolbar,
 						'tbstyle' => 16,
 						'tbservices' => 'facebook,twitter,email,print,compact'
-					));
+					));*/
 				?>
 				<?php wp_nav_menu( array('menu' => 'top menu' )); ?>
 			</div>
