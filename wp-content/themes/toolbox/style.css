@@ -389,13 +389,18 @@ ol, ul {
 .menu-menu-container #menu-menu li.current-menu-item a {
 	color: #000000;
 }
-.menu-menu-container #menu-menu li ul li a, .menu-menu-container #menu-menu li ul li.last ul li a {
+.menu-menu-container #menu-menu li ul li a {
 	background: url("images/dropdown_1_line.png") no-repeat scroll 0 bottom transparent;
 	color: #999999;
 	display: block;
 	height: auto;
 	padding: 10px 10px 10px 14px;
 }
+
+.menu-menu-container #menu-menu li ul li#menu-item-157.menu-item a {
+	background: none;
+}
+
 .menu-menu-container #menu-menu li a:hover {
 	cursor: pointer;
 	color: #000000;
@@ -408,7 +413,7 @@ ol, ul {
 	display: block;
 }
 .menu-menu-container #menu-menu li ul li {
-	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
+	background: url("images/dropdown_1_last.png") no-repeat scroll 0 bottom transparent;
 	clear: both;
 	line-height: 1.4em;
 	width: 140px;
@@ -422,11 +427,7 @@ ol, ul {
 	padding-top: 3px;
 }
 .menu-menu-container #menu-menu li ul li.menu-item-101 {
-	background: url("images/dropdown_1_last.png") no-repeat scroll 0 bottom transparent;
-	padding-bottom: 8px;
-}
-.menu-menu-container #menu-menu li ul li.menu-item-101 a, .menu-menu-container #menu-menu li ul li ul li.menu-item-101 a {
-	background: none repeat scroll 0 0 transparent;
+	background: url("images/dropdown_1_bg.png") repeat-y scroll 0 0 transparent;
 }
 
 .menu-item-16 a {
